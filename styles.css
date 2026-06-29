@@ -29,11 +29,11 @@ body{
 
 /* NAV */
 .nav{position:sticky;top:0;z-index:50;background:rgba(12,35,64,.96);backdrop-filter:blur(8px);border-bottom:3px solid var(--gold)}
-.nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .brand{display:flex;flex-direction:column;line-height:1.2;text-decoration:none}
 .brand-cn{color:var(--white);font-size:18px;letter-spacing:.5px}
 .brand-en{color:var(--aqua-light);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500}
-.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
 .nav-links a{color:var(--aqua-light);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--gold-bright)}
 
@@ -160,7 +160,11 @@ body{
 .form-note a:hover{text-decoration:underline}
 
 /* RESPONSIVE */
-@media (max-width:900px){
+@media (max-width:1024px){
+  .nav-links{gap:18px}
+  .nav-links a{font-size:13px}
+}
+@media (max-width:860px){
   .hero-inner{grid-template-columns:1fr;gap:40px}
   .hero-card{max-width:340px}
   .about-grid{grid-template-columns:1fr;gap:30px}
@@ -170,6 +174,10 @@ body{
   .qr-card{justify-self:center}
   .qr-links{justify-content:center}
   .nav-links{display:none}
+}
+@media (max-width:900px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .wall{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:540px){
   .cards{grid-template-columns:1fr}
