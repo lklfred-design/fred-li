@@ -5,7 +5,7 @@
     "date": "Jun 29, 2026",
     "likes": 7,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7477287969377177600/",
-    "feature": false
+    "feature": true
   },
   {
     "tag": "FemTech",
@@ -45,6 +45,6 @@
     "date": "Jun 15, 2026",
     "likes": 47,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7470115310390583298/",
-    "feature": true
+    "feature": false
   }
 ]
