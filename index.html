@@ -9,13 +9,19 @@
 <meta name="author" content="Fred Li (李冠乐)" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://lklfred-design.github.io/fred-li/" />
+<meta name="theme-color" content="#0C2340" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Fred Li (李冠乐) — Managing Director, Gobi Partners" />
 <meta property="og:description" content="Deep tech, biotech and university spin-off investing across Hong Kong and the Greater Bay Area. Author of 李佛创投笔记 (Li Fo Venture Notes)." />
 <meta property="og:url" content="https://lklfred-design.github.io/fred-li/" />
-<meta property="og:image" content="https://lklfred-design.github.io/fred-li/fred-profile.jpg" />
+<meta property="og:image" content="https://lklfred-design.github.io/fred-li/fred-profile-280.webp" />
 <meta property="og:site_name" content="Fred Li · 李佛创投笔记" />
 <meta property="og:locale" content="en_HK" />
 <meta property="og:locale:alternate" content="zh_HK" />
@@ -26,7 +32,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Fred Li (李冠乐) — Managing Director, Gobi Partners" />
 <meta name="twitter:description" content="Deep tech, biotech and university spin-off investing across Hong Kong and the Greater Bay Area. Author of 李佛创投笔记." />
-<meta name="twitter:image" content="https://lklfred-design.github.io/fred-li/fred-profile.jpg" />
+<meta name="twitter:image" content="https://lklfred-design.github.io/fred-li/fred-profile-280.webp" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +54,7 @@
   },
   "description": "Managing Director & Head of University Ventures at Gobi Partners, investing in deep tech, biotech, life sciences and university spin-offs across Hong Kong and the Greater Bay Area.",
   "url": "https://lklfred-design.github.io/fred-li/",
-  "image": "https://lklfred-design.github.io/fred-li/fred-profile.jpg",
+  "image": "https://lklfred-design.github.io/fred-li/fred-profile-280.webp",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Hong Kong",
@@ -78,13 +84,21 @@
 </script>
 </head>
 <body>
+
+<!-- P1-1: Skip to content (accessibility) -->
+<a class="skip-link" href="#about">Skip to main content</a>
+
 <header class="nav" id="top">
   <div class="nav-inner">
     <a class="brand" href="#top">
       <span class="brand-cn">李佛创投笔记</span>
       <span class="brand-en">Li Fo Venture Notes</span>
     </a>
-    <nav class="nav-links">
+    <!-- Mobile hamburger button -->
+    <button class="nav-hamburger" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="2.5" rx="1"/><rect x="3" y="10.75" width="18" height="2.5" rx="1"/><rect x="3" y="16.5" width="18" height="2.5" rx="1"/></svg>
+    </button>
+    <nav class="nav-links" id="navMenu" aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
       <a href="#posts">LinkedIn</a>
@@ -94,7 +108,7 @@
       <a href="#contact">Message</a>
     </nav>
     <div class="nav-cta">
-      <a class="nav-btn nav-btn-li" href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <a class="nav-btn nav-btn-li" href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener" aria-label="LinkedIn profile">
         <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         <span>LinkedIn</span>
       </a>
@@ -104,15 +118,27 @@
       </a>
     </div>
   </div>
+  <!-- Mobile slide-down menu overlay -->
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#focus">Focus</a>
+      <a href="#posts">LinkedIn</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#press">Press</a>
+      <a href="#connect">Connect</a>
+      <a href="#contact">Message</a>
+    </nav>
+  </div>
 </header>
 
 <main>
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero reveal">
     <div class="hero-stripe"></div>
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="eyebrow">Gobi Partners · Hong Kong</p>
+        <p class="eyebrow"><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="eyebrow-link">Gobi Partners · Hong Kong</a></p>
         <h1>Fred Li<span class="hero-cn">李冠乐</span></h1>
         <p class="hero-brand"><span class="hero-brand-cn">李佛创投笔记</span><span class="hero-brand-en">Li Fo Venture Notes</span></p>
         <p class="hero-role">Managing Director &amp; Head of University Ventures</p>
@@ -134,7 +160,12 @@
       </div>
       <div class="hero-card">
         <div class="avatar">
-          <img src="fred-profile.jpg" alt="Fred Li" id="heroPhoto" />
+          <!-- P1-2: Picture element with WebP + JPG fallback, retina-ready -->
+          <picture>
+            <source type="image/webp" srcset="fred-profile-280.webp 2x, fred-profile.webp 1x" />
+            <source type="image/jpeg" srcset="fred-profile-280.jpg 2x, fred-profile.jpg 1x" />
+            <img src="fred-profile.jpg" alt="Fred Li" id="heroPhoto" width="140" height="140" fetchpriority="high" />
+          </picture>
         </div>
         <div class="avatar-meta">
           <span class="avatar-name">Fred Li · 李冠乐</span>
@@ -147,15 +178,15 @@
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">— About —</span>
       <h2>An investor who works at the seam of research and capital</h2>
     </div>
-    <div class="about-grid">
+    <div class="about-grid reveal">
       <div class="about-body">
         <p>
           Fred Li is Managing Director and Head of University Ventures at
-          <strong>Gobi Partners</strong>, based in Hong Kong. He spearheads the
+          <strong><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="body-link">Gobi Partners</a></strong>, based in Hong Kong. He spearheads the
           firm's university–industry–research–investment ecosystem, helping
           transform academic innovation into commercially viable companies.
         </p>
@@ -195,24 +226,24 @@
 
   <!-- FOCUS -->
   <section class="section section-alt" id="focus">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">— Investment Focus —</span>
       <h2>Where I spend my conviction</h2>
     </div>
-    <div class="cards">
-      <article class="card">
+    <div class="cards reveal">
+      <article class="card reveal-item">
         <h3>Deep Tech &amp; AI</h3>
         <p>Hard-tech ventures and AI applications emerging from frontier research labs across the GBA.</p>
       </article>
-      <article class="card">
+      <article class="card reveal-item">
         <h3>Biotech &amp; Healthcare</h3>
         <p>Life-sciences platforms — from AI-driven drug discovery to peptide design and therapeutics.</p>
       </article>
-      <article class="card">
+      <article class="card reveal-item">
         <h3>University Spin-offs</h3>
         <p>Commercialising academic IP into investable companies with the right team and structure.</p>
       </article>
-      <article class="card">
+      <article class="card reveal-item">
         <h3>GreenTech &amp; Sustainability</h3>
         <p>Patient capital for the next generation of sustainability and climate-impact founders.</p>
       </article>
@@ -221,41 +252,42 @@
 
   <!-- LINKEDIN POSTS WALL -->
   <section class="section" id="posts">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">— On LinkedIn —</span>
       <h2>Notes from the field</h2>
       <p class="section-sub">Recent posts from <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">@fredkli</a>.</p>
     </div>
-    <div class="wall">
-      <a class="post-card feature" href="https://www.linkedin.com/feed/update/urn:li:activity:7470115310390583298/" target="_blank" rel="noopener">
+    <!-- P1-4: Absolute dates instead of relative -->
+    <div class="wall reveal">
+      <a class="post-card feature reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7470115310390583298/" target="_blank" rel="noopener">
         <span class="post-tag">Speaking</span>
         <p class="post-text">I'm speaking at LEAP East in Hong Kong this July — a premier tech event hosted in one of the world's most dynamic innovation hubs.</p>
-        <span class="post-meta"><span class="post-date">2 weeks ago</span><span class="post-eng">♥ 47</span></span>
+        <span class="post-meta"><span class="post-date">Jun 15, 2026</span><span class="post-eng">47 likes</span></span>
       </a>
-      <a class="post-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7471475702475735040/" target="_blank" rel="noopener">
+      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7471475702475735040/" target="_blank" rel="noopener">
         <span class="post-tag">Interview</span>
         <p class="post-text">Gobi-RIF HKUST Fund — interview with VCBeat Health (动脉网). 戈壁科大基金专访: the story behind the fund.</p>
-        <span class="post-meta"><span class="post-date">2 weeks ago</span><span class="post-eng">♥ 40</span></span>
+        <span class="post-meta"><span class="post-date">Jun 15, 2026</span><span class="post-eng">40 likes</span></span>
       </a>
-      <a class="post-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7474112606241193984/" target="_blank" rel="noopener">
+      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7474112606241193984/" target="_blank" rel="noopener">
         <span class="post-tag">GBA</span>
         <p class="post-text">QS 2027 World University Rankings: Hong Kong lands five universities in the global top 100. Same day, I visited 腾讯教育, 深圳清华研究院 (RITS) and the GBA 国创中心.</p>
-        <span class="post-meta"><span class="post-date">1 week ago</span><span class="post-eng">♥ 16</span></span>
+        <span class="post-meta"><span class="post-date">Jun 22, 2026</span><span class="post-eng">16 likes</span></span>
       </a>
-      <a class="post-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7473234041941630977/" target="_blank" rel="noopener">
+      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7473234041941630977/" target="_blank" rel="noopener">
         <span class="post-tag">Deep Tech</span>
         <p class="post-text">I've waited almost a decade for a text formatter on LinkedIn. My take: a truly disruptive upgrade might one day read brain signals (BCI) to format — plus bulk tagging for people and companies.</p>
-        <span class="post-meta"><span class="post-date">1 week ago</span><span class="post-eng">♥ 15</span></span>
+        <span class="post-meta"><span class="post-date">Jun 22, 2026</span><span class="post-eng">15 likes</span></span>
       </a>
-      <a class="post-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7475428706052820992/" target="_blank" rel="noopener">
+      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7475428706052820992/" target="_blank" rel="noopener">
         <span class="post-tag">FemTech</span>
         <p class="post-text">At the FemTech &amp; Women's Health Innovation Conference. Thanks for the invitation — women's health innovation is a space worth backing.</p>
-        <span class="post-meta"><span class="post-date">5 days ago</span><span class="post-eng">♥ 5</span></span>
+        <span class="post-meta"><span class="post-date">Jun 24, 2026</span><span class="post-eng">5 likes</span></span>
       </a>
-      <a class="post-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7477287969377177600/" target="_blank" rel="noopener">
+      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7477287969377177600/" target="_blank" rel="noopener">
         <span class="post-tag">Portfolio</span>
         <p class="post-text">Another HKU deal — backing Archon Robotics. Supporting university spin-offs as they scale.</p>
-        <span class="post-meta"><span class="post-date">1 hour ago</span><span class="post-eng">♥ 7</span></span>
+        <span class="post-meta"><span class="post-date">Jun 29, 2026</span><span class="post-eng">7 likes</span></span>
       </a>
     </div>
     <div class="wall-cta">
@@ -265,33 +297,33 @@
 
   <!-- HIGHLIGHTS -->
   <section class="section section-alt" id="highlights">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">— Selected Highlights —</span>
       <h2>Building bridges between universities and capital</h2>
     </div>
-    <ul class="timeline">
-      <li>
+    <ul class="timeline reveal">
+      <li class="reveal-item">
         <span class="t-date">2026</span>
         <div class="t-body">
           <h3>Head of University Ventures, Gobi Partners</h3>
           <p>Leading Gobi's dedicated university venture initiative across the Greater Bay Area, connecting research, industry and investment.</p>
         </div>
       </li>
-      <li>
+      <li class="reveal-item">
         <span class="t-date">2026</span>
         <div class="t-body">
           <h3>HKU Entrepreneurship Engine Fund × Gobi Partners</h3>
           <p>Joined HKU and Hong Kong Investment Corporation (HKIC) leaders to launch a joint initiative supporting university innovation.</p>
         </div>
       </li>
-      <li>
+      <li class="reveal-item">
         <span class="t-date">2025</span>
         <div class="t-body">
           <h3>Gobi–Redbird Innovation Fund with HKUST</h3>
           <p>Part of Gobi's commitment to commercialising university research and backing early-stage Hong Kong start-ups.</p>
         </div>
       </li>
-      <li>
+      <li class="reveal-item">
         <span class="t-date">Ongoing</span>
         <div class="t-body">
           <h3>Educator, speaker &amp; mentor</h3>
@@ -301,54 +333,72 @@
     </ul>
   </section>
 
-  <!-- PRESS / IN THE NEWS -->
+  <!-- PRESS / IN THE NEWS — with type icons & thumbnails -->
   <section class="section" id="press">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="kicker">— In the News —</span>
       <h2>Press &amp; media coverage</h2>
       <p class="section-sub">Selected appearances and interviews across Hong Kong and regional media.</p>
     </div>
-    <ul class="press-list">
-      <li class="press-item">
+    <ul class="press-list reveal">
+      <li class="press-item reveal-item">
         <a href="https://news.rthk.hk/rthk/ch/news-programmes/this-episode.htm?cmsid=100&amp;episode_id=1028973&amp;livetime=20250615000000" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-radio" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M6.5 6.5a11 11 0 0 1 0 11"/><path d="M17.5 6.5a11 11 0 0 1 0 11"/><path d="M3 3a17 17 0 0 1 0 18"/><path d="M21 3a17 17 0 0 1 0 18"/></svg>
+          </div>
           <span class="press-outlet">RTHK 香港電台</span>
           <span class="press-title">《一桶金》2025投資月論壇 — 主題「AI發展」 panel with 嚴滌宇 &amp; 李冠樂</span>
           <span class="press-date">Jun 2025 · Radio / podcast</span>
         </a>
       </li>
-      <li class="press-item">
+      <li class="press-item reveal-item">
         <a href="https://events.dealstreetasia.com/speaker/fred-li/" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-summit" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
           <span class="press-outlet">DealStreetAsia</span>
-          <span class="press-title">Speaker, Asia PE-VC Summit 2025 — panel “Chinese GPs on the go-global pursuit despite headwinds”</span>
+          <span class="press-title">Speaker, Asia PE-VC Summit 2025 — panel "Chinese GPs on the go-global pursuit despite headwinds"</span>
           <span class="press-date">2025 · Summit / speaker</span>
         </a>
       </li>
-      <li class="press-item">
+      <li class="press-item reveal-item">
         <a href="https://www.vbdata.cn/1519072786" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-interview" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 4v8l-4 4H8l-4-4V6l4-4z"/><path d="M12 7v5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/><path d="M9 19h6"/></svg>
+          </div>
           <span class="press-outlet">動脈网 VCBeat Health</span>
           <span class="press-title">专访戈壁–港大基金 I：香港大学首个联名风投基金落地</span>
           <span class="press-date">Apr 2026 · Feature interview</span>
         </a>
       </li>
-      <li class="press-item">
+      <li class="press-item reveal-item">
         <a href="https://www.stheadline.com/article/3408922" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-interview" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 4v8l-4 4H8l-4-4V6l4-4z"/><path d="M12 7v5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/><path d="M9 19h6"/></svg>
+          </div>
           <span class="press-outlet">星島頭條 Sing Tao Headline</span>
           <span class="press-title">戈壁創投：港融入大灣區 發揮 AI 等科技優勢</span>
           <span class="press-date">Dec 2024 · Interview</span>
         </a>
       </li>
-      <li class="press-item">
+      <li class="press-item reveal-item">
         <a href="https://www.fengshows.com/awhile/74d10b40-5b34-11f1-ab3b-cb2a45e55122" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-forum" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M8 17h3"/><circle cx="18" cy="17" r="2" fill="currentColor"/></svg>
+          </div>
           <span class="press-outlet">鳳凰卫视 Phoenix</span>
           <span class="press-title">2026 鳳凰灣區財經論壇·金融峰會 — 出海与地缘挑戰圓桌嘉賓</span>
           <span class="press-date">May 2026 · Forum panel</span>
         </a>
       </li>
-      <li class="press-item">
+      <li class="press-item reveal-item">
         <a href="https://cfasocietyhongkong.org/storage/photos/shares/MetroFinancePlus/Metro-Finance-Plus-20250319.pdf" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-radio" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M6.5 6.5a11 11 0 0 1 0 11"/><path d="M17.5 6.5a11 11 0 0 1 0 11"/><path d="M3 3a17 17 0 0 1 0 18"/><path d="M21 3a17 17 0 0 1 0 18"/></svg>
+          </div>
           <span class="press-outlet">CFA Society HK × 新城財經台 Metro Finance</span>
           <span class="press-title">風險投資：推動創新的戰略價值不容低估</span>
-          <span class="press-date">Mar 2025 · Radio / commentary</span>
+          <span class="press-date">Mar 2025 · Radio / commentary · PDF</span>
         </a>
       </li>
     </ul>
@@ -356,14 +406,14 @@
 
   <!-- CONNECT / WECHAT QR -->
   <section class="section" id="connect">
-    <div class="section-head center">
+    <div class="section-head center reveal">
       <span class="kicker">— Follow —</span>
       <h2>李佛创投笔记 · Li Fo Venture Notes</h2>
       <p class="section-sub center-sub">Bilingual insights on biotech, AI, deep tech and the GBA startup ecosystem.</p>
     </div>
-    <div class="qr-block">
+    <div class="qr-block reveal">
       <div class="qr-card">
-        <img src="lifo-qr.png" alt="李佛创投笔记 QR code" />
+        <img src="lifo-qr.png" alt="李佛创投笔记 QR code" loading="lazy" />
         <p class="qr-label">Scan to follow 李佛创投笔记</p>
       </div>
       <div class="qr-text">
@@ -376,14 +426,16 @@
     </div>
   </section>
 
-  <!-- MESSAGE / CONTACT FORM -->
+  <!-- MESSAGE / CONTACT — P1-3: Formspree form -->
   <section class="section section-alt" id="contact">
-    <div class="section-head center">
+    <div class="section-head center reveal">
       <span class="kicker">— Get in touch —</span>
       <h2>Send me your business plan</h2>
       <p class="section-sub center-sub">For founders, investors and university partners. Messages go straight to my inbox.</p>
     </div>
-    <form class="contact-form" id="contactForm">
+    <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+      <!-- Formspree honeypot for spam filtering -->
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
       <div class="form-row">
         <div class="field">
           <label for="name">Name</label>
@@ -403,8 +455,17 @@
         <textarea id="message" name="message" rows="6" required placeholder="Tell me about your venture — stage, sector, what you're raising, and a link to your deck or plan."></textarea>
       </div>
       <button type="submit" class="btn btn-primary btn-block">Send message</button>
-      <p class="form-note">This opens your email app addressed to <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>. Prefer to write directly? Same address.</p>
+      <p class="form-note">Powered by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>. Prefer to write directly? <a href="mailto:fred@gobi.vc">fred@gobi.vc</a></p>
     </form>
+    <!-- Success message (shown after Formspree redirect) -->
+    <div class="contact-success" id="contactSuccess" style="display:none">
+      <div class="success-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#1D9E75" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+      </div>
+      <h3>Message sent</h3>
+      <p>Thank you — I'll reply within 48 hours.</p>
+      <a class="btn btn-ghost" href="#top">Back to top</a>
+    </div>
   </section>
 </main>
 
@@ -414,36 +475,82 @@
       <span class="brand-cn">李佛创投笔记</span>
       <span class="footer-en">Li Fo Venture Notes</span>
     </div>
-    <p class="footer-copy">© <span id="year"></span> Fred Li · 李冠乐. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.gobi.vc" target="_blank" rel="noopener">Gobi Partners</a>
+      <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:fred@gobi.vc">Email</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="year"></span> Fred Li · 李冠乐. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
+  // Year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Contact form -> pre-filled email to fred@gobi.vc
+  // P0: Mobile hamburger menu toggle
+  var navToggle = document.getElementById('navToggle');
+  var navMobile = document.getElementById('navMobile');
+  var navLinks = document.querySelectorAll('#navMobile a, .nav-links a');
+  if (navToggle && navMobile) {
+    navToggle.addEventListener('click', function () {
+      var expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      navMobile.setAttribute('aria-hidden', String(expanded));
+      navMobile.classList.toggle('open');
+      // Swap hamburger → X icon
+      if (!expanded) {
+        navToggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>';
+      } else {
+        navToggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="2.5" rx="1"/><rect x="3" y="10.75" width="18" height="2.5" rx="1"/><rect x="3" y="16.5" width="18" height="2.5" rx="1"/></svg>';
+      }
+    });
+    // Close menu on link click
+    navMobile.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navMobile.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navMobile.setAttribute('aria-hidden', 'true');
+        navToggle.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="2.5" rx="1"/><rect x="3" y="10.75" width="18" height="2.5" rx="1"/><rect x="3" y="16.5" width="18" height="2.5" rx="1"/></svg>';
+      });
+    });
+  }
+
+  // P1-3: Formspree form handler (with success state)
   var contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var name = (document.getElementById('name').value || '').trim();
-      var email = (document.getElementById('email').value || '').trim();
-      var company = (document.getElementById('company').value || '').trim();
-      var message = (document.getElementById('message').value || '').trim();
-      var subject = 'New message from fredli website' + (name ? ' — ' + name : '');
-      var bodyLines = [
-        'Name: ' + name,
-        'Email: ' + email,
-        'Company / venture: ' + company,
-        '',
-        message
-      ];
-      var mailto = 'mailto:fred@gobi.vc'
-        + '?subject=' + encodeURIComponent(subject)
-        + '&body=' + encodeURIComponent(bodyLines.join('\n'));
-      window.location.href = mailto;
+      // If action is still PLACEHOLDER, fallback to mailto
+      var action = contactForm.getAttribute('action');
+      if (action.indexOf('PLACEHOLDER') !== -1) {
+        e.preventDefault();
+        var name = (document.getElementById('name').value || '').trim();
+        var email = (document.getElementById('email').value || '').trim();
+        var company = (document.getElementById('company').value || '').trim();
+        var message = (document.getElementById('message').value || '').trim();
+        var subject = 'New message from fredli website' + (name ? ' — ' + name : '');
+        var bodyLines = [
+          'Name: ' + name,
+          'Email: ' + email,
+          'Company / venture: ' + company,
+          '',
+          message
+        ];
+        var mailto = 'mailto:fred@gobi.vc'
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+        window.location.href = mailto;
+      }
+      // If Formspree is configured, form submits normally — Formspree redirects to ?success page
     });
+    // Check for Formspree success redirect
+    if (window.location.search.indexOf('success') !== -1 || window.location.hash.indexOf('success') !== -1) {
+      contactForm.style.display = 'none';
+      document.getElementById('contactSuccess').style.display = 'block';
+    }
   }
+
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var id = a.getAttribute('href');
@@ -453,6 +560,40 @@
       }
     });
   });
+
+  // P1-5: Scroll-reveal animations with IntersectionObserver
+  (function () {
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) return; // Respect accessibility
+
+    var reveals = document.querySelectorAll('.reveal, .reveal-item');
+    reveals.forEach(function (el) { el.classList.add('reveal-hidden'); });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          // Stagger for reveal-item children
+          var delay = 0;
+          if (entry.target.classList.contains('reveal-item')) {
+            var parent = entry.target.closest('.reveal');
+            if (parent) {
+              var siblings = parent.querySelectorAll('.reveal-item');
+              for (var i = 0; i < siblings.length; i++) {
+                if (siblings[i] === entry.target) { delay = i * 80; break; }
+              }
+            }
+          }
+          setTimeout(function () {
+            entry.target.classList.add('reveal-visible');
+            entry.target.classList.remove('reveal-hidden');
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(function (el) { observer.observe(el); });
+  })();
 </script>
 </body>
 </html>
