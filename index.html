@@ -90,7 +90,7 @@
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
       <a href="#posts">LinkedIn</a>
-      <a href="#articles">Writing</a>
+      <a href="#popular">Writing</a>
       <a href="#highlights">Highlights</a>
       <a href="#press">Press</a>
       <a class="nav-btn nav-btn-li" href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener" aria-label="LinkedIn profile">
@@ -109,8 +109,7 @@
       <a href="#about">About</a>
       <a href="#focus">Focus</a>
       <a href="#posts">LinkedIn</a>
-      <a href="#articles">Writing</a>
-      <a href="#popular">Popular</a>
+      <a href="#popular">Writing</a>
       <a href="#highlights">Highlights</a>
       <a href="#press">Press</a>
       <a href="#connect">Connect</a>
@@ -250,21 +249,7 @@
     </div>
   </section>
 
-  <!-- WECHAT WRITING — Latest + Popular (BEFORE Press) -->
-  <section class="section section-alt" id="articles">
-    <div class="section-head center reveal">
-      <span class="kicker">— 最新文章 —</span>
-      <h2>李佛创投笔记 · Latest from Li Fo Venture Notes</h2>
-      <p class="section-sub center-sub">Bilingual deep-tech and biotech insights, published weekly on WeChat.</p>
-    </div>
-    <!-- Articles rendered dynamically from wechat-articles.json -->
-    <div class="articles-grid reveal" id="wechatArticles"></div>
-    <div class="wall-cta">
-      <a class="btn btn-ghost" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzcxMDExNTI4OQ==&amp;action=getalbum&amp;album_id=4414449579753013251#wechat_redirect" target="_blank" rel="noopener">查看全部文章 on WeChat</a>
-    </div>
-  </section>
-
-  <!-- POPULAR ARTICLES — 爆款精选 (>1000 reads) -->
+<!-- POPULAR ARTICLES — 爆款精选 (>1000 reads) -->
   <section class="section" id="popular">
     <div class="section-head reveal">
       <span class="kicker">— 爆款精选 —</span>
@@ -472,32 +457,10 @@
     })
     .catch(function () { /* silent fail */ });
 
-  // WeChat articles — render from wechat-articles.json (latest first)
+  // WeChat articles — render popular from wechat-articles.json
   fetch('wechat-articles.json')
     .then(function (r) { return r.json(); })
     .then(function (articles) {
-      var grid = document.getElementById('wechatArticles');
-      if (!grid || !articles.length) return;
-      // Show latest 4 in "Latest" section
-      var latest = articles.slice(0, 4);
-      latest.forEach(function (a, i) {
-        var card = document.createElement('a');
-        card.className = 'article-card reveal-item';
-        card.href = a.url;
-        card.target = '_blank';
-        card.rel = 'noopener';
-        card.innerHTML = '<span class="article-date">' + a.date + '</span>'
-          + '<span class="article-title">' + a.title + '</span>'
-          + '<span class="article-summary">' + a.summary + '</span>';
-        grid.appendChild(card);
-      });
-      if (window._revealObserver) {
-        grid.querySelectorAll('.reveal-item').forEach(function (el) {
-          el.classList.add('reveal-hidden');
-          window._revealObserver.observe(el);
-        });
-      }
-
       // Popular section — sort by reads desc, show top 6
       var popGrid = document.getElementById('popularArticles');
       if (popGrid && articles.length) {
