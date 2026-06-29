@@ -183,17 +183,18 @@ body{
 .card h3{color:var(--navy);font-size:18px;margin-bottom:10px}
 .card p{font-size:14.5px;color:var(--charcoal)}
 
-/* TIMELINE */
-.timeline{list-style:none;position:relative;max-width:860px}
-.timeline li{display:grid;grid-template-columns:80px 1fr;gap:0 18px;position:relative;padding:0}
-.timeline li::before{content:"";position:absolute;left:39px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--off);box-shadow:0 0 0 2px var(--gold);z-index:2}
-/* Vertical line — runs through the date column center */
-.timeline::after{content:"";position:absolute;left:46px;top:0;bottom:0;width:2px;background:var(--aqua-pale);z-index:1}
-.t-date{font-size:12.5px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;padding-top:12px;text-align:right;line-height:1}
-.t-body{padding-top:6px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+/* TIMELINE — 2-col: date left | gap+line+dot | body right */
+.timeline{list-style:none;position:relative;max-width:800px;margin:0 auto;padding-left:0}
+.timeline li{display:grid;grid-template-columns:minmax(80px,auto) 1fr;gap:0 24px;position:relative;padding-bottom:8px}
+/* Vertical line between columns */
+.timeline::before{content:"";position:absolute;left:calc(minmax(80px,auto) + 12px);top:4px;bottom:20px;width:2px;background:var(--aqua-pale);z-index:0}
+/* Gold dot on the line */
+.timeline li::after{content:"";position:absolute;left:calc(minmax(80px,auto) + 6px);top:12px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--off);box-shadow:0 0 0 2px var(--gold);z-index:1}
+.t-date{font-size:13px;font-weight:700;color:var(--aqua);letter-spacing:.5px;text-transform:uppercase;padding-top:10px;text-align:right;line-height:1.4;white-space:nowrap;min-width:70px}
+.t-body{padding-top:6px;padding-bottom:24px;border-bottom:1px solid var(--line)}
 .timeline li:last-child .t-body{border-bottom:none;padding-bottom:0}
-.t-body h3{color:var(--navy);font-size:18px;margin-bottom:6px}
-.t-body p{font-size:15px;color:var(--charcoal);max-width:62ch}
+.t-body h3{color:var(--navy);font-size:18px;margin-bottom:6px;line-height:1.35}
+.t-body p{font-size:15px;color:var(--charcoal);max-width:62ch;line-height:1.6}
 
 /* LOGOS */
 .logos{list-style:none;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
@@ -265,6 +266,12 @@ body{
 .article-title{font-size:18px;font-weight:700;color:var(--navy);line-height:1.4;font-family:var(--cn)}
 .article-summary{font-size:14px;color:var(--charcoal);line-height:1.5}
 
+/* POPULAR ARTICLES — extra styles for read count + type badge */
+.popular-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}
+.popular-reads{font-size:12px;font-weight:700;color:var(--white);background:var(--gold);padding:3px 10px;border-radius:999px;letter-spacing:.3px}
+.popular-reads::before{content:"\2605";margin-right:4px;font-size:11px}
+.article-type-badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gray);background:var(--off);border:1px solid var(--line);padding:3px 10px;border-radius:999px;align-self:flex-start}
+
 
 /* P1-5: Scroll-reveal animations */
 .reveal-hidden{
@@ -330,8 +337,8 @@ body{
   .footer-inner{flex-direction:column;align-items:flex-start}
   .footer-links{margin-top:12px}
   .timeline li{grid-template-columns:1fr;gap:0}
-  .timeline::after{left:0}
-  .timeline li::before{left:-7px;top:6px}
+  .timeline::before{left:0;top:0;bottom:0}
+  .timeline li::after{left:-7px;top:6px}
   .t-date{text-align:left;padding-top:0;margin-bottom:4px;padding-left:18px}
   .t-body{padding-top:0;padding-left:18px;border-bottom:1px solid var(--line)}
 }
