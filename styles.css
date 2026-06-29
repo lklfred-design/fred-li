@@ -184,10 +184,14 @@ body{
 .card p{font-size:14.5px;color:var(--charcoal)}
 
 /* TIMELINE */
-.timeline{list-style:none;position:relative;margin-left:8px;border-left:2px solid var(--aqua-pale);display:flex;flex-direction:column;gap:30px}
-.timeline li{position:relative;padding-left:30px}
-.timeline li::before{content:"";position:absolute;left:-9px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--white);box-shadow:0 0 0 2px var(--gold)}
-.t-date{display:inline-block;font-size:12.5px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.timeline{list-style:none;position:relative;max-width:860px}
+.timeline li{display:grid;grid-template-columns:80px 1fr;gap:0 18px;position:relative;padding:0}
+.timeline li::before{content:"";position:absolute;left:39px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--off);box-shadow:0 0 0 2px var(--gold);z-index:2}
+/* Vertical line — runs through the date column center */
+.timeline::after{content:"";position:absolute;left:46px;top:0;bottom:0;width:2px;background:var(--aqua-pale);z-index:1}
+.t-date{font-size:12.5px;font-weight:700;color:var(--aqua);letter-spacing:1px;text-transform:uppercase;padding-top:12px;text-align:right;line-height:1}
+.t-body{padding-top:6px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.timeline li:last-child .t-body{border-bottom:none;padding-bottom:0}
 .t-body h3{color:var(--navy);font-size:18px;margin-bottom:6px}
 .t-body p{font-size:15px;color:var(--charcoal);max-width:62ch}
 
@@ -325,4 +329,9 @@ body{
   .articles-grid{grid-template-columns:1fr}
   .footer-inner{flex-direction:column;align-items:flex-start}
   .footer-links{margin-top:12px}
+  .timeline li{grid-template-columns:1fr;gap:0}
+  .timeline::after{left:0}
+  .timeline li::before{left:-7px;top:6px}
+  .t-date{text-align:left;padding-top:0;margin-bottom:4px;padding-left:18px}
+  .t-body{padding-top:0;padding-left:18px;border-bottom:1px solid var(--line)}
 }
