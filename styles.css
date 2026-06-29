@@ -151,7 +151,7 @@ body{
 /* SECTIONS */
 .section{max-width:var(--maxw);margin:0 auto;padding:86px 24px}
 .section-alt{max-width:none;background:var(--off);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.section-alt .section-head,.section-alt .cards,.section-alt .logos,.section-alt .ecosystem-note{max-width:var(--maxw);margin-left:auto;margin-right:auto}
+.section-alt .section-head,.section-alt .cards,.section-alt .logos,.section-alt .ecosystem-note,.section-alt .articles-grid,.section-alt .wall-cta{max-width:var(--maxw);margin-left:auto;margin-right:auto}
 .section-head{margin-bottom:44px}
 .section-head.center{text-align:center}
 .kicker{display:inline-block;color:var(--aqua);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
@@ -252,6 +252,15 @@ body{
 .qr-text strong{color:var(--navy)}
 .qr-links{display:flex;gap:14px;flex-wrap:wrap}
 
+/* WECHAT ARTICLES */
+.articles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:860px;margin:0 auto}
+.article-card{display:flex;flex-direction:column;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s;border-left:4px solid var(--gold)}
+.article-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(12,35,64,.1);border-left-color:var(--aqua)}
+.article-card:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
+.article-date{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--aqua)}
+.article-title{font-size:18px;font-weight:700;color:var(--navy);line-height:1.4;font-family:var(--cn)}
+.article-summary{font-size:14px;color:var(--charcoal);line-height:1.5}
+
 
 /* P1-5: Scroll-reveal animations */
 .reveal-hidden{
@@ -313,6 +322,7 @@ body{
 @media (max-width:540px){
   .cards{grid-template-columns:1fr}
   .wall{grid-template-columns:1fr}
+  .articles-grid{grid-template-columns:1fr}
   .footer-inner{flex-direction:column;align-items:flex-start}
   .footer-links{margin-top:12px}
 }

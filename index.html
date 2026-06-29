@@ -252,39 +252,8 @@
       <h2>Notes from the field</h2>
       <p class="section-sub">Recent posts from <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">@fredkli</a>.</p>
     </div>
-    <!-- P1-4: Absolute dates instead of relative -->
-    <div class="wall reveal">
-      <a class="post-card feature reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7470115310390583298/" target="_blank" rel="noopener">
-        <span class="post-tag">Speaking</span>
-        <p class="post-text">I'm speaking at LEAP East in Hong Kong this July — a premier tech event hosted in one of the world's most dynamic innovation hubs.</p>
-        <span class="post-meta"><span class="post-date">Jun 15, 2026</span><span class="post-eng">47 likes</span></span>
-      </a>
-      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7471475702475735040/" target="_blank" rel="noopener">
-        <span class="post-tag">Interview</span>
-        <p class="post-text">Gobi-RIF HKUST Fund — interview with VCBeat Health (动脉网). 戈壁科大基金专访: the story behind the fund.</p>
-        <span class="post-meta"><span class="post-date">Jun 15, 2026</span><span class="post-eng">40 likes</span></span>
-      </a>
-      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7474112606241193984/" target="_blank" rel="noopener">
-        <span class="post-tag">GBA</span>
-        <p class="post-text">QS 2027 World University Rankings: Hong Kong lands five universities in the global top 100. Same day, I visited 腾讯教育, 深圳清华研究院 (RITS) and the GBA 国创中心.</p>
-        <span class="post-meta"><span class="post-date">Jun 22, 2026</span><span class="post-eng">16 likes</span></span>
-      </a>
-      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7473234041941630977/" target="_blank" rel="noopener">
-        <span class="post-tag">Deep Tech</span>
-        <p class="post-text">I've waited almost a decade for a text formatter on LinkedIn. My take: a truly disruptive upgrade might one day read brain signals (BCI) to format — plus bulk tagging for people and companies.</p>
-        <span class="post-meta"><span class="post-date">Jun 22, 2026</span><span class="post-eng">15 likes</span></span>
-      </a>
-      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7475428706052820992/" target="_blank" rel="noopener">
-        <span class="post-tag">FemTech</span>
-        <p class="post-text">At the FemTech &amp; Women's Health Innovation Conference. Thanks for the invitation — women's health innovation is a space worth backing.</p>
-        <span class="post-meta"><span class="post-date">Jun 24, 2026</span><span class="post-eng">5 likes</span></span>
-      </a>
-      <a class="post-card reveal-item" href="https://www.linkedin.com/feed/update/urn:li:activity:7477287969377177600/" target="_blank" rel="noopener">
-        <span class="post-tag">Portfolio</span>
-        <p class="post-text">Another HKU deal — backing Archon Robotics. Supporting university spin-offs as they scale.</p>
-        <span class="post-meta"><span class="post-date">Jun 29, 2026</span><span class="post-eng">7 likes</span></span>
-      </a>
-    </div>
+    <!-- Posts rendered dynamically from linkedin-posts.json -->
+    <div class="wall reveal" id="linkedinWall"></div>
     <div class="wall-cta">
       <a class="btn btn-ghost" href="https://www.linkedin.com/in/fredkli/recent-activity/all/" target="_blank" rel="noopener">See all activity on LinkedIn</a>
     </div>
@@ -420,6 +389,20 @@
       </div>
     </div>
   </section>
+
+  <!-- LATEST ARTICLES from 李佛创投笔记 -->
+  <section class="section section-alt" id="articles">
+    <div class="section-head center reveal">
+      <span class="kicker">— 最新文章 —</span>
+      <h2>李佛创投笔记 · Latest from Li Fo Venture Notes</h2>
+      <p class="section-sub center-sub">Bilingual deep-tech and biotech insights, published weekly on WeChat.</p>
+    </div>
+    <!-- Articles rendered dynamically from wechat-articles.json -->
+    <div class="articles-grid reveal" id="wechatArticles"></div>
+    <div class="wall-cta">
+      <a class="btn btn-ghost" href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzcxMDExNTI4OQ==&amp;action=getalbum&amp;album_id=4414449579753013251#wechat_redirect" target="_blank" rel="noopener">查看全部文章 on WeChat</a>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
@@ -440,6 +423,69 @@
 <script>
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // LinkedIn posts — render from linkedin-posts.json (latest first)
+  fetch('linkedin-posts.json')
+    .then(function (r) { return r.json(); })
+    .then(function (posts) {
+      var wall = document.getElementById('linkedinWall');
+      if (!wall || !posts.length) return;
+      posts.forEach(function (p, i) {
+        var cls = 'post-card reveal-item' + (p.feature ? ' feature' : '');
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = p.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.innerHTML = '<span class="post-tag">' + p.tag + '</span>'
+          + '<p class="post-text">' + p.text + '</p>'
+          + '<span class="post-meta"><span class="post-date">' + p.date + '</span><span class="post-eng">' + p.likes + ' likes</span></span>';
+        wall.appendChild(a);
+      });
+      // Re-observe new reveal-items for scroll animation
+      if (window._revealObserver) {
+        wall.querySelectorAll('.reveal-item').forEach(function (el) {
+          el.classList.add('reveal-hidden');
+          window._revealObserver.observe(el);
+        });
+      }
+    })
+    .catch(function () { /* silent fail — wall stays empty */ });
+
+  // WeChat articles — render from wechat-articles.json (latest first)
+  fetch('wechat-articles.json')
+    .then(function (r) { return r.json(); })
+    .then(function (articles) {
+      var grid = document.getElementById('wechatArticles');
+      if (!grid || !articles.length) return;
+      articles.forEach(function (a, i) {
+        var card = document.createElement('a');
+        card.className = 'article-card reveal-item';
+        card.href = a.url;
+        card.target = '_blank';
+        card.rel = 'noopener';
+        // Type icon colors
+        var typeColors = {
+          interview: 'var(--navy)',
+          opinion: 'var(--gold)',
+          report: 'var(--aqua)',
+          analysis: 'var(--aqua)',
+          review: '#1D9E75'
+        };
+        var iconColor = typeColors[a.type] || 'var(--navy)';
+        card.innerHTML = '<span class="article-date">' + a.date + '</span>'
+          + '<span class="article-title">' + a.title + '</span>'
+          + '<span class="article-summary">' + a.summary + '</span>';
+        grid.appendChild(card);
+      });
+      if (window._revealObserver) {
+        grid.querySelectorAll('.reveal-item').forEach(function (el) {
+          el.classList.add('reveal-hidden');
+          window._revealObserver.observe(el);
+        });
+      }
+    })
+    .catch(function () { /* silent fail */ });
 
   // P0: Mobile hamburger menu toggle
   var navToggle = document.getElementById('navToggle');
@@ -511,6 +557,9 @@
         }
       });
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    // Expose for dynamic content (LinkedIn + WeChat fetch)
+    window._revealObserver = observer;
 
     reveals.forEach(function (el) { observer.observe(el); });
   })();
