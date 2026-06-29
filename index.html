@@ -104,10 +104,6 @@
       <a href="#posts">LinkedIn</a>
       <a href="#highlights">Highlights</a>
       <a href="#press">Press</a>
-      <a href="#connect">Connect</a>
-      <a href="#contact">Message</a>
-    </nav>
-    <div class="nav-cta">
       <a class="nav-btn nav-btn-li" href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener" aria-label="LinkedIn profile">
         <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         <span>LinkedIn</span>
@@ -127,7 +123,6 @@
       <a href="#highlights">Highlights</a>
       <a href="#press">Press</a>
       <a href="#connect">Connect</a>
-      <a href="#contact">Message</a>
     </nav>
   </div>
 </header>
@@ -148,8 +143,8 @@
           biotech and life sciences.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#contact">Send me your plan</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="mailto:fred@gobi.vc">Email</a>
         </div>
         <ul class="hero-tags">
           <li>Deep Tech</li>
@@ -425,48 +420,6 @@
       </div>
     </div>
   </section>
-
-  <!-- MESSAGE / CONTACT — P1-3: Formspree form -->
-  <section class="section section-alt" id="contact">
-    <div class="section-head center reveal">
-      <span class="kicker">— Get in touch —</span>
-      <h2>Send me your business plan</h2>
-      <p class="section-sub center-sub">For founders, investors and university partners. Messages go straight to my inbox.</p>
-    </div>
-    <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/PLACEHOLDER" method="POST">
-      <!-- Formspree honeypot for spam filtering -->
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-      <div class="form-row">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your name" />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="you@company.com" />
-        </div>
-      </div>
-      <div class="field">
-        <label for="company">Company / venture</label>
-        <input type="text" id="company" name="company" placeholder="Company or project name" />
-      </div>
-      <div class="field">
-        <label for="message">Message / business plan</label>
-        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your venture — stage, sector, what you're raising, and a link to your deck or plan."></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">Send message</button>
-      <p class="form-note">Powered by <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a>. Prefer to write directly? <a href="mailto:fred@gobi.vc">fred@gobi.vc</a></p>
-    </form>
-    <!-- Success message (shown after Formspree redirect) -->
-    <div class="contact-success" id="contactSuccess" style="display:none">
-      <div class="success-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#1D9E75" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
-      </div>
-      <h3>Message sent</h3>
-      <p>Thank you — I'll reply within 48 hours.</p>
-      <a class="btn btn-ghost" href="#top">Back to top</a>
-    </div>
-  </section>
 </main>
 
 <footer class="footer">
@@ -516,39 +469,6 @@
     });
   }
 
-  // P1-3: Formspree form handler (with success state)
-  var contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      // If action is still PLACEHOLDER, fallback to mailto
-      var action = contactForm.getAttribute('action');
-      if (action.indexOf('PLACEHOLDER') !== -1) {
-        e.preventDefault();
-        var name = (document.getElementById('name').value || '').trim();
-        var email = (document.getElementById('email').value || '').trim();
-        var company = (document.getElementById('company').value || '').trim();
-        var message = (document.getElementById('message').value || '').trim();
-        var subject = 'New message from fredli website' + (name ? ' — ' + name : '');
-        var bodyLines = [
-          'Name: ' + name,
-          'Email: ' + email,
-          'Company / venture: ' + company,
-          '',
-          message
-        ];
-        var mailto = 'mailto:fred@gobi.vc'
-          + '?subject=' + encodeURIComponent(subject)
-          + '&body=' + encodeURIComponent(bodyLines.join('\n'));
-        window.location.href = mailto;
-      }
-      // If Formspree is configured, form submits normally — Formspree redirects to ?success page
-    });
-    // Check for Formspree success redirect
-    if (window.location.search.indexOf('success') !== -1 || window.location.hash.indexOf('success') !== -1) {
-      contactForm.style.display = 'none';
-      document.getElementById('contactSuccess').style.display = 'block';
-    }
-  }
 
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
