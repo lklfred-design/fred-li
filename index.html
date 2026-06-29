@@ -445,7 +445,7 @@
         a.rel = 'noopener';
         a.innerHTML = '<span class="post-tag">' + p.tag + '</span>'
           + '<p class="post-text">' + p.text + '</p>'
-          + '<span class="post-meta"><span class="post-date">' + p.date + '</span><span class="post-eng">' + p.likes + ' likes</span></span>';
+          + '<span class="post-meta"><span class="post-date">' + p.date + '</span></span>';
         wall.appendChild(a);
       });
       if (window._revealObserver) {
@@ -472,11 +472,9 @@
           card.href = a.url;
           card.target = '_blank';
           card.rel = 'noopener';
-          var readsStr = (a.reads || 0) >= 1000 ? Math.round(a.reads / 1000) + 'k+' : String(a.reads || '');
           var typeLabel = { interview: '\u4e13\u8bbf', opinion: '\u89c2\u70b9', report: '\u62a5\u544a', analysis: '\u6df1\u5ea6', review: '\u590d\u76d8' };
           card.innerHTML = '<div class="popular-header">'
             + '<span class="article-date">' + a.date + '</span>'
-            + '<span class="popular-reads">' + readsStr + ' \u9605\u8bfb</span>'
             + '</div>'
             + '<span class="article-title">' + a.title + '</span>'
             + '<span class="article-summary">' + a.summary + '</span>'
