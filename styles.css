@@ -374,3 +374,11 @@ body{
 .faq-item[open]{border-color:var(--aqua-light)}
 .faq-item p{margin:12px 0 4px;color:var(--charcoal);line-height:1.7}
 .faq-item p a{color:var(--aqua);font-weight:600}
+
+/* ===== Appointments ===== */
+.appointments{max-width:1100px;margin:56px auto 0;padding:0 8px}
+.appointments-title{font-size:.85rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);margin:0 0 6px}
+.appointments-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px 32px;list-style:none;padding:14px 0 0;margin:0}
+.appointments-grid li{position:relative;padding-left:20px;color:var(--charcoal);line-height:1.55;font-size:.95rem}
+.appointments-grid li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:2px;background:var(--gold)}
+@media(max-width:760px){.appointments-grid{grid-template-columns:1fr}}
