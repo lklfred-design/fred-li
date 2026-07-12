@@ -362,3 +362,15 @@ body{
   .press-title{font-size:14px}
   .qr-card img{width:140px;height:140px}
 }
+
+/* ===== Press: news thumb ===== */
+.press-type-news{background:#EAF1F7;color:var(--navy)}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px 22px}
+.faq-item summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:1.02rem;list-style-position:outside}
+.faq-item summary:hover{color:var(--aqua)}
+.faq-item[open]{border-color:var(--aqua-light)}
+.faq-item p{margin:12px 0 4px;color:var(--charcoal);line-height:1.7}
+.faq-item p a{color:var(--aqua);font-weight:600}

@@ -44,6 +44,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://lklfred-design.github.io/fred-li/#person",
   "name": "Fred Li",
   "alternateName": ["李冠乐", "李冠樂", "Li Koon Lok", "李佛创投笔记", "Li Fo Venture Notes"],
   "jobTitle": "Managing Director & Head of University Ventures",
@@ -70,6 +71,58 @@
   "sameAs": ["https://www.linkedin.com/in/fredkli", "https://www.gobi.vc/team/fred-li"]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lklfred-design.github.io/fred-li/#website",
+      "url": "https://lklfred-design.github.io/fred-li/",
+      "name": "Fred Li · 李佛创投笔记",
+      "inLanguage": ["en", "zh"],
+      "about": { "@id": "https://lklfred-design.github.io/fred-li/#person" },
+      "dateModified": "2026-07-12"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://lklfred-design.github.io/fred-li/#profilepage",
+      "url": "https://lklfred-design.github.io/fred-li/",
+      "name": "Fred Li (李冠乐) — Managing Director, Gobi Partners",
+      "isPartOf": { "@id": "https://lklfred-design.github.io/fred-li/#website" },
+      "mainEntity": { "@id": "https://lklfred-design.github.io/fred-li/#person" },
+      "dateModified": "2026-07-12"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://lklfred-design.github.io/fred-li/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Fred Li (李冠乐)?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fred Li (李冠乐, Li Koon Lok) is Managing Director & Head of University Ventures at Gobi Partners, based in Hong Kong. He leads Gobi's university ventures strategy across the Greater Bay Area, including the Gobi-HKU Fund I with The University of Hong Kong and the Gobi-Redbird Innovation Fund with HKUST, investing in deep tech, biotech and university spin-offs." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is 李佛创投笔记 (Li Fo Venture Notes)?",
+          "acceptedAnswer": { "@type": "Answer", "text": "李佛创投笔记 is Fred Li's WeChat official account (公众号), where he publishes Chinese-language deep dives on venture capital, university spin-offs, technology transfer, and the Hong Kong / Greater Bay Area innovation ecosystem." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Fred Li invest in?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fred Li focuses on early-stage deep tech investments: university spin-offs, healthcare and biotechnology, AI and robotics, and greentech, primarily across Hong Kong and the Greater Bay Area." }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact Fred Li?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can reach Fred Li by email at fred@gobi.vc, connect on LinkedIn at linkedin.com/in/fredkli, or follow 李佛创投笔记 on WeChat." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script data-goatcounter="https://fredli.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 
@@ -249,12 +302,12 @@
     </div>
   </section>
 
-<!-- POPULAR ARTICLES — 爆款精选 (>1000 reads) -->
+<!-- WECHAT ARTICLES — 精选文章 (latest first, verified permanent links) -->
   <section class="section" id="popular">
     <div class="section-head reveal">
-      <span class="kicker">— 爆款精选 —</span>
-      <h2>Most-read on 李佛创投笔记</h2>
-      <p class="section-sub">Top articles with 1,000+ readers, sorted by readership.</p>
+      <span class="kicker">— 精选文章 —</span>
+      <h2>Latest on 李佛创投笔记</h2>
+      <p class="section-sub">Selected deep-dive articles from the WeChat blog, newest first.</p>
     </div>
     <div class="articles-grid reveal" id="popularArticles"></div>
     <div class="wall-cta">
@@ -319,6 +372,17 @@
           <span class="press-date">Jun 2026 · Feature interview</span>
         </a>
       </li>
+      <!-- May 2026 — 凤凰网财经 feature -->
+      <li class="press-item reveal-item">
+        <a href="https://finance.ifeng.com/c/8tTQE5R5QbW" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-interview" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 4v8l-4 4H8l-4-4V6l4-4z"/><path d="M12 7v5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/><path d="M9 19h6"/></svg>
+          </div>
+          <span class="press-outlet">凤凰网财经 Phoenix Finance</span>
+          <span class="press-title">地缘因素成企业出海阻碍 风投机构需陪伴企业共渡难关</span>
+          <span class="press-date">May 2026 · Interview / feature</span>
+        </a>
+      </li>
       <!-- May 2026 -->
       <li class="press-item reveal-item">
         <a href="https://www.fengshows.com/awhile/74d10b40-5b34-11f1-ab3b-cb2a45e55122" target="_blank" rel="noopener">
@@ -339,6 +403,50 @@
           <span class="press-outlet">動脈网 VCBeat Health</span>
           <span class="press-title">专访戈壁–港大基金 I：香港大学首个联名风投基金落地</span>
           <span class="press-date">Apr 2026 · Feature interview</span>
+        </a>
+      </li>
+      <!-- Mar 2026 — DealStreetAsia news -->
+      <li class="press-item reveal-item">
+        <a href="https://www.dealstreetasia.com/stories/hku-gobi-joint-venture-fund-476898" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-news" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h13v16H6a2 2 0 0 1-2-2V4z"/><path d="M17 8h3v10a2 2 0 0 1-2 2h-1"/><path d="M8 8h5"/><path d="M8 12h5"/><path d="M8 16h3"/></svg>
+          </div>
+          <span class="press-outlet">DealStreetAsia</span>
+          <span class="press-title">HKU, Gobi debut $30.6m joint fund, as top varsity builds its FOF ecosystem</span>
+          <span class="press-date">Mar 2026 · News coverage</span>
+        </a>
+      </li>
+      <!-- Mar 2026 — SCMP news -->
+      <li class="press-item reveal-item">
+        <a href="https://www.scmp.com/business/banking-finance/article/3347689/hkic-gobi-partners-and-hku-team-fund-backing-university-research-start-ups" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-news" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h13v16H6a2 2 0 0 1-2-2V4z"/><path d="M17 8h3v10a2 2 0 0 1-2 2h-1"/><path d="M8 8h5"/><path d="M8 12h5"/><path d="M8 16h3"/></svg>
+          </div>
+          <span class="press-outlet">South China Morning Post</span>
+          <span class="press-title">HKIC, Gobi Partners and HKU team up for fund backing university research start-ups</span>
+          <span class="press-date">Mar 2026 · News coverage</span>
+        </a>
+      </li>
+      <!-- Oct 2025 — DealStreetAsia news -->
+      <li class="press-item reveal-item">
+        <a href="https://www.dealstreetasia.com/stories/hkust-gobi-launch-new-venture-fund-459809" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-news" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h13v16H6a2 2 0 0 1-2-2V4z"/><path d="M17 8h3v10a2 2 0 0 1-2 2h-1"/><path d="M8 8h5"/><path d="M8 12h5"/><path d="M8 16h3"/></svg>
+          </div>
+          <span class="press-outlet">DealStreetAsia</span>
+          <span class="press-title">HKUST, Gobi launch early stage-focused venture fund with HKIC backing</span>
+          <span class="press-date">Oct 2025 · News coverage</span>
+        </a>
+      </li>
+      <!-- Sep 2025 — DealStreetAsia feature -->
+      <li class="press-item reveal-item">
+        <a href="https://www.dealstreetasia.com/stories/hk-university-licensing-biotech-455013" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-interview" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 4v8l-4 4H8l-4-4V6l4-4z"/><path d="M12 7v5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/><path d="M9 19h6"/></svg>
+          </div>
+          <span class="press-outlet">DealStreetAsia</span>
+          <span class="press-title">HK's rigid university licensing is holding back its biotech ambitions — featuring Fred Li on exclusive licensing hurdles</span>
+          <span class="press-date">Sep 2025 · Feature / quoted</span>
         </a>
       </li>
       <!-- Jun 2025 -->
@@ -385,7 +493,45 @@
           <span class="press-date">Dec 2024 · Interview</span>
         </a>
       </li>
+      <!-- Dec 2023 — DealStreetAsia interview -->
+      <li class="press-item reveal-item">
+        <a href="https://www.dealstreetasia.com/stories/hk-universities-to-back-startups-374586" target="_blank" rel="noopener">
+          <div class="press-thumb press-type-interview" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8l4 4v8l-4 4H8l-4-4V6l4-4z"/><path d="M12 7v5"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/><path d="M9 19h6"/></svg>
+          </div>
+          <span class="press-outlet">DealStreetAsia</span>
+          <span class="press-title">HK's universities to play a more active role in backing startups, says Fred Li of Gobi Partners</span>
+          <span class="press-date">Dec 2023 · Interview</span>
+        </a>
+      </li>
     </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-head reveal">
+      <span class="kicker">— FAQ —</span>
+      <h2>Frequently asked questions</h2>
+      <p class="section-sub">Quick answers about Fred Li and 李佛创投笔记.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item reveal-item">
+        <summary>Who is Fred Li (李冠乐)?</summary>
+        <p>Fred Li (李冠乐, Li Koon Lok) is Managing Director &amp; Head of University Ventures at Gobi Partners, based in Hong Kong. He leads Gobi's university ventures strategy across the Greater Bay Area — including the Gobi-HKU Fund I with The University of Hong Kong and the Gobi-Redbird Innovation Fund with HKUST — investing in deep tech, biotech and university spin-offs.</p>
+      </details>
+      <details class="faq-item reveal-item">
+        <summary>What is 李佛创投笔记 (Li Fo Venture Notes)?</summary>
+        <p>李佛创投笔记 is Fred's WeChat official account (公众号), publishing Chinese-language deep dives on venture capital, university spin-offs, technology transfer, and the Hong Kong / Greater Bay Area innovation ecosystem.</p>
+      </details>
+      <details class="faq-item reveal-item">
+        <summary>What does Fred Li invest in?</summary>
+        <p>Early-stage deep tech: university spin-offs, healthcare &amp; biotechnology, AI and robotics, and greentech — primarily across Hong Kong and the Greater Bay Area.</p>
+      </details>
+      <details class="faq-item reveal-item">
+        <summary>How can I contact Fred Li?</summary>
+        <p>Email <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>, connect on <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>, or follow 李佛创投笔记 on WeChat.</p>
+      </details>
+    </div>
   </section>
 
   <!-- CONNECT / WECHAT QR -->
@@ -422,7 +568,7 @@
       <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:fred@gobi.vc">Email</a>
     </div>
-    <p class="footer-copy">&copy; <span id="year"></span> Fred Li. All rights reserved.</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 12, 2026</p>
   </div>
 </footer>
 
@@ -436,6 +582,7 @@
     .then(function (posts) {
       var wall = document.getElementById('linkedinWall');
       if (!wall || !posts.length) return;
+      posts = posts.slice().sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
       posts.forEach(function (p, i) {
         var cls = 'post-card reveal-item' + (p.feature ? ' feature' : '');
         var a = document.createElement('a');
@@ -461,11 +608,11 @@
   fetch('wechat-articles.json')
     .then(function (r) { return r.json(); })
     .then(function (articles) {
-      // Popular section — sort by reads desc, show top 6
+      // Articles — sort by date desc (latest first)
       var popGrid = document.getElementById('popularArticles');
       if (popGrid && articles.length) {
-        var sorted = articles.slice().sort(function (a, b) { return (b.reads || 0) - (a.reads || 0); });
-        var top6 = sorted.slice(0, 6);
+        var sorted = articles.slice().sort(function (a, b) { return new Date(b.date) - new Date(a.date); });
+        var top6 = sorted.slice(0, 9);
         top6.forEach(function (a, i) {
           var card = document.createElement('a');
           card.className = 'article-card popular-card reveal-item';

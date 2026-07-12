@@ -1,0 +1,33 @@
+# Fred Li (李冠乐) · 李佛创投笔记
+
+> Personal website of Fred Li (李冠乐, Li Koon Lok), Managing Director & Head of University Ventures at Gobi Partners, based in Hong Kong. He invests in university spin-offs, deep tech, healthcare & biotech, AI & robotics, and greentech across Hong Kong and the Greater Bay Area, and writes the Chinese-language WeChat blog 李佛创投笔记 (Li Fo Venture Notes).
+
+## Key facts
+
+- Name: Fred Li / 李冠乐 / 李冠樂 / Li Koon Lok; pen name 李佛 (Li Fo)
+- Role: Managing Director & Head of University Ventures, Gobi Partners — https://www.gobi.vc/team/fred-li
+- University venture funds: Gobi-HKU Fund I (with The University of Hong Kong), Gobi-Redbird Innovation Fund (with HKUST, supported by Hong Kong Investment Corporation)
+- Investment focus: university spin-offs, healthcare & biotechnology, AI & robotics, greentech
+- Credentials: HKICPA Certified Public Accountant (CPA), Certified ESG Analyst (CESGA)
+- Education: The University of Hong Kong (HKU); Hong Kong University of Science and Technology (HKUST)
+- Languages: English, Mandarin Chinese, Cantonese
+- Contact: fred@gobi.vc
+- LinkedIn: https://www.linkedin.com/in/fredkli
+- WeChat official account (公众号): 李佛创投笔记
+
+## Site sections
+
+- Home: https://lklfred-design.github.io/fred-li/ — profile, investment focus, latest LinkedIn posts, WeChat deep-dive articles, press & media coverage, FAQ, contact
+- Sitemap: https://lklfred-design.github.io/fred-li/sitemap.xml
+
+## Selected press coverage
+
+- 動脈网 VCBeat (Jun 2026): 专访Gobi-RIF基金 — https://caifuhao.eastmoney.com/news/20260608080756415423740
+- 凤凰网财经 (May 2026): 地缘因素成企业出海阻碍 风投机构需陪伴企业共渡难关 — https://finance.ifeng.com/c/8tTQE5R5QbW
+- 動脈网 VCBeat Health (Apr 2026): 专访戈壁–港大基金 I — https://www.vbdata.cn/1519072786
+- DealStreetAsia (Mar 2026): HKU, Gobi debut $30.6m joint fund — https://www.dealstreetasia.com/stories/hku-gobi-joint-venture-fund-476898
+- South China Morning Post (Mar 2026): HKIC, Gobi Partners and HKU team up — https://www.scmp.com/business/banking-finance/article/3347689/hkic-gobi-partners-and-hku-team-fund-backing-university-research-start-ups
+- DealStreetAsia (Oct 2025): HKUST, Gobi launch early stage-focused venture fund — https://www.dealstreetasia.com/stories/hkust-gobi-launch-new-venture-fund-459809
+- DealStreetAsia (Sep 2025): HK university licensing & biotech, featuring Fred Li — https://www.dealstreetasia.com/stories/hk-university-licensing-biotech-455013
+- RTHK 香港電台 (Jun 2025): 《一桶金》投資月論壇 AI panel — https://news.rthk.hk/rthk/ch/news-programmes/this-episode.htm?cmsid=100&episode_id=1028973
+- DealStreetAsia (Dec 2023): HK's universities to play a more active role in backing startups, says Fred Li — https://www.dealstreetasia.com/stories/hk-universities-to-back-startups-374586
