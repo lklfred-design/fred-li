@@ -187,9 +187,9 @@ body{
 .timeline{list-style:none;position:relative;max-width:800px;margin:0 auto;padding-left:0}
 .timeline li{display:grid;grid-template-columns:90px 1fr;gap:0 24px;position:relative;padding-bottom:8px}
 /* Vertical line between columns */
-.timeline::before{content:"";position:absolute;left:46px;top:4px;bottom:20px;width:2px;background:var(--aqua-pale);z-index:0}
+.timeline::before{content:"";position:absolute;left:101px;top:4px;bottom:20px;width:2px;background:var(--aqua-pale);z-index:0}
 /* Gold dot on the line */
-.timeline li::after{content:"";position:absolute;left:39px;top:12px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--off);box-shadow:0 0 0 2px var(--gold);z-index:1}
+.timeline li::after{content:"";position:absolute;left:94px;top:12px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--off);box-shadow:0 0 0 2px var(--gold);z-index:1}
 .t-date{font-size:13px;font-weight:700;color:var(--aqua);letter-spacing:.5px;text-transform:uppercase;padding-top:10px;text-align:right;line-height:1.4;white-space:nowrap;min-width:70px}
 .t-body{padding-top:6px;padding-bottom:24px;border-bottom:1px solid var(--line)}
 .timeline li:last-child .t-body{border-bottom:none;padding-bottom:0}
@@ -382,3 +382,13 @@ body{
 .appointments-grid li{position:relative;padding-left:20px;color:var(--charcoal);line-height:1.55;font-size:.95rem}
 .appointments-grid li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:2px;background:var(--gold)}
 @media(max-width:760px){.appointments-grid{grid-template-columns:1fr}}
+
+/* ===== Language toggle ===== */
+.lang-toggle{display:inline-flex;align-items:center;justify-content:center;padding:7px 14px;border-radius:8px;font-size:13px;font-weight:700;background:transparent;color:var(--aqua-light);border:1px solid rgba(168,216,232,.45);cursor:pointer;font-family:var(--cn),'Plus Jakarta Sans',sans-serif;letter-spacing:.08em;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.lang-toggle:hover{background:var(--aqua);color:var(--navy);border-color:var(--aqua)}
+.lang-toggle:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
+@media (max-width:860px){
+  .nav-hamburger{margin-left:auto;order:2}
+  .lang-toggle{order:1;margin-left:auto}
+  .nav-hamburger{margin-left:0}
+}
