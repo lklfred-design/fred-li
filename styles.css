@@ -112,7 +112,7 @@ html:not([data-theme="light"]) .footer{background:rgba(3,9,19,.7)}
 .brand{display:flex;flex-direction:column;line-height:1.2;text-decoration:none}
 .brand-cn{color:var(--on-dark);font-size:18px;letter-spacing:.5px}
 .brand-en{color:var(--aqua-light);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500}
-.nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}
+.nav-links{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}
 .nav-links a{color:var(--aqua-light);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--gold-bright)}
 .nav-links a:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px;border-radius:4px}
