@@ -150,8 +150,6 @@
     /* Moments carousel */
     { s: '#moments .kicker', en: '— In the Field —', zh: '— 活动掠影 —' },
     { s: '#moments h2', en: 'Teaching, workshops &amp; ecosystem moments', zh: '授课、工作坊与生态活动瞬间' },
-    { s: '#carTag0', en: 'Teaching', zh: '授课' },
-    { s: '#carCap0', en: 'Masterclass at the Venture Capital Learning Lab, Asia School of Business (Cradle &times; MYStartup)', zh: '于亚洲商学院 Venture Capital Learning Lab 大师课授课（Cradle &times; MYStartup）' },
     { s: '#carTag1', en: 'Teaching', zh: '授课' },
     { s: '#carCap1', en: 'Speaking at the PolyU Venture Building Workshop', zh: '于香港理工大学 Venture Building Workshop 主讲' },
     { s: '#carTag2', en: 'Teaching', zh: '授课' },
@@ -186,7 +184,7 @@
     { s: '.footer-links a[href*="gobi.vc"]', en: 'Gobi Partners', zh: '戈壁创投' },
     { s: '.footer-links a[href*="linkedin"]', en: 'LinkedIn', zh: '领英' },
     { s: '.footer-links a[href^="mailto"]', en: 'Email', zh: '电邮' },
-    { s: '.footer-copy', en: '&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 14, 2026', zh: '&copy; <span id="year"></span> 李冠乐 Fred Li · 版权所有 · 最后更新：2026年7月14日' }
+    { s: '.footer-copy', en: '&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 15, 2026', zh: '&copy; <span id="year"></span> 李冠乐 Fred Li · 版权所有 · 最后更新：2026年7月15日' }
   ];
 
   function applyLang(lang) {
