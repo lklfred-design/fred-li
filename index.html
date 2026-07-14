@@ -37,6 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<script>(function(){var t;try{t=localStorage.getItem('fl-theme')}catch(e){}if(t!=='light'&&t!=='dark')t='dark';document.documentElement.setAttribute('data-theme',t);})();</script>
 <link rel="stylesheet" href="styles.css" />
 
 <!-- Structured data for search & generative engines (GEO) -->
@@ -82,7 +83,7 @@
       "name": "Fred Li · 李佛创投笔记",
       "inLanguage": ["en", "zh"],
       "about": { "@id": "https://lklfred-design.github.io/fred-li/#person" },
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-14"
     },
     {
       "@type": "ProfilePage",
@@ -91,7 +92,7 @@
       "name": "Fred Li (李冠乐) — Managing Director, Gobi Partners",
       "isPartOf": { "@id": "https://lklfred-design.github.io/fred-li/#website" },
       "mainEntity": { "@id": "https://lklfred-design.github.io/fred-li/#person" },
-      "dateModified": "2026-07-13"
+      "dateModified": "2026-07-14"
     },
     {
       "@type": "FAQPage",
@@ -155,6 +156,7 @@
         <span>WeChat</span>
       </a>
     </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode / 切换浅色模式">&#9788;</button>
     <button class="lang-toggle" id="langToggle" type="button" aria-label="切换至中文">中文</button>
   </div>
   <!-- Mobile slide-down menu overlay -->
@@ -212,6 +214,69 @@
           <span class="avatar-cred">CPA · CESGA®</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- MOMENTS CAROUSEL -->
+  <section class="section carousel-section" id="moments">
+    <div class="section-head reveal">
+      <span class="kicker">— In the Field —</span>
+      <h2>Teaching, workshops &amp; ecosystem moments</h2>
+    </div>
+    <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Event photos">
+      <div class="car-track" id="carTrack" tabindex="0">
+        <figure class="car-slide">
+          <img src="photos/vc-learning-lab.jpg" alt="Fred Li teaching at the Venture Capital Learning Lab, Asia School of Business" width="1400" height="788" fetchpriority="low" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag0">Teaching</span><span class="car-text" id="carCap0">Masterclass at the Venture Capital Learning Lab, Asia School of Business (Cradle &times; MYStartup)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/polyu-workshop.jpg" alt="Fred Li speaking on stage at the PolyU Venture Building Workshop" loading="lazy" width="1400" height="823" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag1">Teaching</span><span class="car-text" id="carCap1">Speaking at the PolyU Venture Building Workshop</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/hku-lecture.jpg" alt="Fred Li giving a guest lecture on venture capital at The University of Hong Kong" loading="lazy" width="1400" height="1050" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag2">Teaching</span><span class="car-text" id="carCap2">Guest lecture &ldquo;Deal Maker — About Venture Capital&rdquo; at The University of Hong Kong</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/polyu-raise.jpg" alt="Fred Li presenting at the PolyU Entrepreneurship Elite Gathering for RAISe+" loading="lazy" width="1400" height="933" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag3">Teaching</span><span class="car-text" id="carCap3">Investment Connect for RAISe+ — PolyU Entrepreneurship Elite Gathering (Jun 2025)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/hkstp-inno-day.jpg" alt="Fred Li sharing on stage at HKSTP Elite Inno Day 2024" loading="lazy" width="1400" height="858" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag4">Sharing</span><span class="car-text" id="carCap4">HKSTP Elite Inno Day 2024 — sharing on market expansion &amp; business development</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/greentech-workshop.jpg" alt="Fred Li presenting venture insights at an investor workshop" loading="lazy" width="1530" height="906" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag5">Workshop</span><span class="car-text" id="carCap5">Sharing venture insights at an investor workshop</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/hkust-redbird.jpg" alt="Fred Li on the panel at the HKUST Redbird Innovation Fund and Gobi Partners fund launch" loading="lazy" width="1400" height="933" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag6">Panel</span><span class="car-text" id="carCap6">Panel at the HKUST Redbird Innovation Fund &times; Gobi Partners fund launch (Oct 2025)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/hku-fund-launch.jpg" alt="Gobi Partners and HKU joint fund launch ceremony group photo" loading="lazy" width="900" height="419" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag7">Ceremony</span><span class="car-text" id="carCap7">Gobi &times; HKU joint fund first close &amp; first batch investment ceremony</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/polyu-microfund.jpg" alt="Fred Li with fellow panelists at the PolyU Micro Fund" loading="lazy" width="1400" height="929" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag8">Ecosystem</span><span class="car-text" id="carCap8">Panelist for the PolyU Micro Fund (2023–24 Cohort 2)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/scmp-conference.jpg" alt="Fred Li at the SCMP China Conference in Hong Kong" loading="lazy" width="1400" height="1050" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag9">Ecosystem</span><span class="car-text" id="carCap9">SCMP China Conference, Hong Kong (Jul 2025)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/gpff-forum.jpg" alt="Fred Li speaking on a roundtable at the Phoenix Bay Area Financial Forum" loading="lazy" width="924" height="616" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag10">Panel</span><span class="car-text" id="carCap10">Roundtable at the Phoenix Bay Area Financial Forum &middot; Finance Summit, Shenzhen (May 2026)</span></figcaption>
+        </figure>
+        <figure class="car-slide">
+          <img src="photos/rthk-radio.jpg" alt="Fred Li in the RTHK Radio 1 studio" loading="lazy" width="1400" height="901" />
+          <figcaption class="car-cap"><span class="car-tag" id="carTag11">Media</span><span class="car-text" id="carCap11">Guest on RTHK Radio 1&rsquo;s 《投資多面睇》</span></figcaption>
+        </figure>
+      </div>
+      <button class="car-btn car-prev" id="carPrev" type="button" aria-label="Previous photo">&#8249;</button>
+      <button class="car-btn car-next" id="carNext" type="button" aria-label="Next photo">&#8250;</button>
+      <div class="car-dots" id="carDots" role="tablist" aria-label="Choose photo"></div>
     </div>
   </section>
 
@@ -601,7 +666,7 @@
       <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:fred@gobi.vc">Email</a>
     </div>
-    <p class="footer-copy">&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 13, 2026</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 14, 2026</p>
   </div>
 </footer>
 
@@ -766,6 +831,70 @@
       });
     });
   })();
+</script>
+<script>
+/* Theme toggle */
+(function(){
+  var btn=document.getElementById('themeToggle');
+  function set(t){
+    document.documentElement.setAttribute('data-theme',t);
+    try{localStorage.setItem('fl-theme',t)}catch(e){}
+    if(btn){
+      btn.innerHTML=t==='dark'?'&#9788;':'&#9789;';
+      btn.setAttribute('aria-label',t==='dark'?'Switch to light mode / 切换浅色模式':'Switch to dark mode / 切换深色模式');
+    }
+  }
+  set(document.documentElement.getAttribute('data-theme')||'dark');
+  if(btn)btn.addEventListener('click',function(){
+    set(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+  });
+})();
+/* Moments carousel */
+(function(){
+  var track=document.getElementById('carTrack');
+  if(!track)return;
+  var slides=track.children,dots=document.getElementById('carDots'),idx=0,timer=null,st=null;
+  for(var i=0;i<slides.length;i++){
+    (function(i){
+      var b=document.createElement('button');
+      b.className='car-dot';b.type='button';
+      b.setAttribute('aria-label','Photo '+(i+1)+' of '+slides.length);
+      b.addEventListener('click',function(){stop();go(i);});
+      dots.appendChild(b);
+    })(i);
+  }
+  function upd(){
+    for(var i=0;i<dots.children.length;i++)dots.children[i].classList.toggle('active',i===idx);
+  }
+  function go(i){
+    idx=(i+slides.length)%slides.length;
+    track.scrollTo({left:slides[idx].offsetLeft-track.offsetLeft,behavior:'smooth'});
+    upd();
+  }
+  document.getElementById('carPrev').addEventListener('click',function(){stop();go(idx-1);});
+  document.getElementById('carNext').addEventListener('click',function(){stop();go(idx+1);});
+  track.addEventListener('scroll',function(){
+    clearTimeout(st);
+    st=setTimeout(function(){
+      var w=slides[0].offsetWidth+16;
+      var n=Math.round(track.scrollLeft/w);
+      idx=Math.max(0,Math.min(slides.length-1,n));
+      upd();
+    },90);
+  },{passive:true});
+  track.addEventListener('keydown',function(e){
+    if(e.key==='ArrowLeft'){e.preventDefault();stop();go(idx-1);}
+    if(e.key==='ArrowRight'){e.preventDefault();stop();go(idx+1);}
+  });
+  var reduced=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function play(){if(reduced||timer)return;timer=setInterval(function(){go(idx+1);},5500);}
+  function stop(){if(timer){clearInterval(timer);timer=null;}}
+  var wrap=document.getElementById('carousel');
+  wrap.addEventListener('mouseenter',stop);
+  wrap.addEventListener('mouseleave',function(){play();});
+  track.addEventListener('touchstart',stop,{passive:true});
+  upd();play();
+})();
 </script>
 <script src="i18n.js"></script>
 </body>

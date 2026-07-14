@@ -147,6 +147,34 @@
     { s: '.faq-list details:nth-of-type(4) summary', en: 'How can I contact Fred Li?', zh: '如何联系 Fred Li？' },
     { s: '.faq-list details:nth-of-type(4) p', en: 'Email <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>, connect on <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>, or follow 李佛创投笔记 on WeChat.', zh: '电邮 <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>、在<a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">领英</a>联系，或在微信关注《李佛创投笔记》。' },
 
+    /* Moments carousel */
+    { s: '#moments .kicker', en: '— In the Field —', zh: '— 活动掠影 —' },
+    { s: '#moments h2', en: 'Teaching, workshops &amp; ecosystem moments', zh: '授课、工作坊与生态活动瞬间' },
+    { s: '#carTag0', en: 'Teaching', zh: '授课' },
+    { s: '#carCap0', en: 'Masterclass at the Venture Capital Learning Lab, Asia School of Business (Cradle &times; MYStartup)', zh: '于亚洲商学院 Venture Capital Learning Lab 大师课授课（Cradle &times; MYStartup）' },
+    { s: '#carTag1', en: 'Teaching', zh: '授课' },
+    { s: '#carCap1', en: 'Speaking at the PolyU Venture Building Workshop', zh: '于香港理工大学 Venture Building Workshop 主讲' },
+    { s: '#carTag2', en: 'Teaching', zh: '授课' },
+    { s: '#carCap2', en: 'Guest lecture &ldquo;Deal Maker — About Venture Capital&rdquo; at The University of Hong Kong', zh: '于香港大学客席讲授《Deal Maker — About Venture Capital》' },
+    { s: '#carTag3', en: 'Teaching', zh: '授课' },
+    { s: '#carCap3', en: 'Investment Connect for RAISe+ — PolyU Entrepreneurship Elite Gathering (Jun 2025)', zh: '香港理工大学「产学研1+计划」（RAISe+）投资对接活动（2025年6月）' },
+    { s: '#carTag4', en: 'Sharing', zh: '分享' },
+    { s: '#carCap4', en: 'HKSTP Elite Inno Day 2024 — sharing on market expansion &amp; business development', zh: '香港科技园 Elite Inno Day 2024 — 市场拓展与业务发展分享' },
+    { s: '#carTag5', en: 'Workshop', zh: '工作坊' },
+    { s: '#carCap5', en: 'Sharing venture insights at an investor workshop', zh: '于投资者工作坊分享创投洞察' },
+    { s: '#carTag6', en: 'Panel', zh: '座谈' },
+    { s: '#carCap6', en: 'Panel at the HKUST Redbird Innovation Fund &times; Gobi Partners fund launch (Oct 2025)', zh: '香港科技大学 Redbird Innovation Fund &times; 戈壁创投基金启动座谈（2025年10月）' },
+    { s: '#carTag7', en: 'Ceremony', zh: '典礼' },
+    { s: '#carCap7', en: 'Gobi &times; HKU joint fund first close &amp; first batch investment ceremony', zh: 'Gobi &times; HKU 联合基金首关暨首批项目投资仪式（香港大学）' },
+    { s: '#carTag8', en: 'Ecosystem', zh: '生态' },
+    { s: '#carCap8', en: 'Panelist for the PolyU Micro Fund (2023–24 Cohort 2)', zh: '担任香港理工大学 Micro Fund 评审（2023–24 年度第二期）' },
+    { s: '#carTag9', en: 'Ecosystem', zh: '生态' },
+    { s: '#carCap9', en: 'SCMP China Conference, Hong Kong (Jul 2025)', zh: '《南华早报》SCMP China Conference（2025年7月 · 香港）' },
+    { s: '#carTag10', en: 'Panel', zh: '座谈' },
+    { s: '#carCap10', en: 'Roundtable at the Phoenix Bay Area Financial Forum &middot; Finance Summit, Shenzhen (May 2026)', zh: '2026凤凰湾区财经论坛·金融峰会圆桌对话（深圳）' },
+    { s: '#carTag11', en: 'Media', zh: '媒体' },
+    { s: '#carCap11', en: 'Guest on RTHK Radio 1&rsquo;s 《投資多面睇》', zh: '香港电台第一台《投资多面睇》节目嘉宾' },
+
     /* Connect */
     { s: '#connect .kicker', en: '— Follow —', zh: '— 关注 —' },
     { s: '#connect .section-sub', en: 'Bilingual insights on biotech, AI, deep tech and the GBA startup ecosystem.', zh: '以中英双语分享生物科技、AI、深科技与大湾区创业生态的洞察。' },
@@ -158,7 +186,7 @@
     { s: '.footer-links a[href*="gobi.vc"]', en: 'Gobi Partners', zh: '戈壁创投' },
     { s: '.footer-links a[href*="linkedin"]', en: 'LinkedIn', zh: '领英' },
     { s: '.footer-links a[href^="mailto"]', en: 'Email', zh: '电邮' },
-    { s: '.footer-copy', en: '&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 13, 2026', zh: '&copy; <span id="year"></span> 李冠乐 Fred Li · 版权所有 · 最后更新：2026年7月13日' }
+    { s: '.footer-copy', en: '&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 14, 2026', zh: '&copy; <span id="year"></span> 李冠乐 Fred Li · 版权所有 · 最后更新：2026年7月14日' }
   ];
 
   function applyLang(lang) {
