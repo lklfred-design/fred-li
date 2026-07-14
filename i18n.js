@@ -8,14 +8,14 @@
   var META = {
     en: {
       htmlLang: 'en',
-      title: 'Fred Li — Managing Director, Gobi Partners | 李佛创投笔记',
-      desc: 'Fred Li is Managing Director & Head of University Ventures at Gobi Partners in Hong Kong, investing in deep tech, biotech, life sciences and university spin-offs across Hong Kong and the Greater Bay Area. Author of 李佛创投笔记 (Li Fo Venture Notes).',
+      title: 'Fred Li — Venture Capitalist, Educator & Ecosystem Builder | Gobi Partners · 李佛创投笔记',
+      desc: 'Fred Li (李冠乐) is Managing Director & Head of University Ventures at Gobi Partners — among the most active venture capitalists, ecosystem builders and educators in the Greater Bay Area, teaching 100+ hours a year across six Hong Kong universities and investing in deep tech, Life Science and university spin-offs. Author of 李佛创投笔记 (Li Fo Venture Notes).',
       toggleLabel: '中文'
     },
     zh: {
       htmlLang: 'zh-CN',
-      title: '李冠乐 Fred Li — 戈壁创投董事总经理 | 李佛创投笔记',
-      desc: '李冠乐（Fred Li）是戈壁创投（Gobi Partners）董事总经理兼大学创投负责人，常驻香港，专注深科技、生物科技、生命科学及大学衍生企业投资，覆盖香港与大湾区。微信公众号《李佛创投笔记》作者。',
+      title: '李冠乐 Fred Li — 风险投资人 · 创投教育者 · 生态建设者 | 戈壁创投 · 李佛创投笔记',
+      desc: '李冠乐（Fred Li）是戈壁创投（Gobi Partners）董事总经理兼大学创投负责人，是大湾区最活跃的风险投资人、生态建设者与创投教育者之一——每年在六所香港高校授课超过100小时，专注深科技、生命科学及大学衍生企业投资。微信公众号《李佛创投笔记》作者。',
       toggleLabel: 'EN'
     }
   };
@@ -34,25 +34,25 @@
     { s: '.nav-btn-wc span', en: 'WeChat', zh: '微信' },
 
     /* Hero */
-    { s: '.eyebrow-link', en: 'Gobi Partners · Hong Kong', zh: '戈壁创投 Gobi Partners · 香港' },
+    { s: '.eyebrow-loc', en: 'Greater Bay Area · 大湾区', zh: '大湾区 · Greater Bay Area' },
     { s: '.hero-text h1', en: 'Fred Li', zh: '李冠乐 Fred Li' },
-    { s: '.hero-role', en: 'Managing Director &amp; Head of University Ventures', zh: '董事总经理 · 大学创投负责人' },
-    { s: '.hero-lede', en: 'Turning breakthrough university research into scalable ventures across Hong Kong and the Greater Bay Area — with a focus on deep tech, biotech and life sciences.', zh: '专注把突破性的大学科研成果转化为可规模化的公司，深耕香港与大湾区的深科技、生物科技与生命科学。' },
-    { s: '.hero-cta a[href^="mailto"]', en: 'Email', zh: '电邮' },
+    { s: '.hero-role', en: 'Managing Director &amp; Head of University Ventures · <a href="https://www.gobi.vc" target="_blank" rel="noopener">Gobi Partners</a>', zh: '董事总经理 · 大学创投负责人 · <a href="https://www.gobi.vc" target="_blank" rel="noopener">戈壁创投 Gobi Partners</a>' },
+    { s: '.hero-lede', en: 'Turning breakthrough university research into scalable ventures — investing, teaching and building the deep-tech and Life Science ecosystem across Hong Kong and the Greater Bay Area.', zh: '专注把突破性的大学科研成果转化为可规模化的公司——在香港与大湾区投资、授课，并构建深科技与生命科学创业生态。' },
     { s: '.hero-tags li:nth-of-type(1)', en: 'Deep Tech', zh: '深科技' },
-    { s: '.hero-tags li:nth-of-type(2)', en: 'Biotech &amp; Life Sciences', zh: '生物科技与生命科学' },
+    { s: '.hero-tags li:nth-of-type(2)', en: 'Life Science', zh: '生命科学' },
     { s: '.hero-tags li:nth-of-type(3)', en: 'University Spin-offs', zh: '大学衍生企业' },
     { s: '.hero-tags li:nth-of-type(4)', en: 'Greater Bay Area', zh: '大湾区' },
+    { s: '.hero-tags li:nth-of-type(5)', en: 'Venture Education', zh: '创投教育' },
     { s: '.avatar-name', en: 'Fred Li', zh: '李冠乐' },
-    { s: '.avatar-sub', en: 'VC &amp; private-market deal maker', zh: '风险投资人 · 私募市场交易' },
+    { s: '.avatar-sub', en: 'Investor · Educator · Ecosystem Builder', zh: '投资人 · 教育者 · 生态建设者' },
 
     /* About */
     { s: '#about .kicker', en: '— About —', zh: '— 关于 —' },
     { s: '#about h2', en: 'An investor who works at the seam of research and capital', zh: '站在科研与资本交汇处的投资人' },
-    { s: '.about-body p:nth-of-type(1)', en: 'Fred Li is Managing Director and Head of University Ventures at <strong><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="body-link">Gobi Partners</a></strong>, based in Hong Kong. He spearheads the firm\u2019s university\u2013industry\u2013research\u2013investment ecosystem, helping transform academic innovation into commercially viable companies.', zh: '李冠乐（Fred Li）是<strong><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="body-link">戈壁创投（Gobi Partners）</a></strong>董事总经理兼大学创投负责人，常驻香港。他牵头构建戈壁的「产学研投」生态体系，助力学术创新转化为具商业价值的公司。' },
+    { s: '.about-body p:nth-of-type(1)', en: 'Fred Li is Managing Director and Head of University Ventures at <strong><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="body-link">Gobi Partners</a></strong>, working across the Greater Bay Area. He spearheads the firm\u2019s university\u2013industry\u2013research\u2013investment ecosystem, helping transform academic innovation into commercially viable companies — and as an educator, teaches 100+ hours a year across six Hong Kong universities.', zh: '李冠乐（Fred Li）是<strong><a href="https://www.gobi.vc" target="_blank" rel="noopener" class="body-link">戈壁创投（Gobi Partners）</a></strong>董事总经理兼大学创投负责人，活跃于大湾区。他牵头构建戈壁的「产学研投」生态体系，助力学术创新转化为具商业价值的公司；作为创投教育者，他每年在六所香港高校授课超过100小时。' },
     { s: '.about-body p:nth-of-type(2)', en: 'With over 15 years of experience in private-market transactions, management operations and turnarounds — as both a deal maker and a former General Manager — Fred brings a rare blend of investment judgment and hands-on operating experience to the founders he backs.', zh: '他拥有逾15年私募市场交易、企业管理与业务重整经验——既是投资交易的操盘者，也曾出任企业总经理——为所支持的创始人带来投资判断与实战运营兼备的独特视角。' },
     { s: '.about-body p:nth-of-type(3)', en: 'Fred began his career in restructuring advisory at Deloitte, then built full-cycle deal experience across VC and PE — Senior Associate at Ocean Equity Partners (MFO), Vice President at CITIC CLSA Capital Partners, and Executive Director at Hywin International — serving on portfolio-company boards along the way. As Group General Manager of Gaia Group, a 1,000-person company in his previous portfolio, he led successful turnarounds and digital transformation first-hand.', zh: '他的职业生涯始于德勤（Deloitte）重组咨询，其后在 VC 与 PE 领域积累全周期交易经验——历任家族办公室 Ocean Equity Partners 高级投资经理、CITIC CLSA Capital Partners 副总裁及海银国际（Hywin International）执行董事，期间出任多家被投企业董事。他亦曾担任被投企业 Gaia Group（约1,000名员工）集团总经理，亲身主导企业扭亏为盈与数字化转型。' },
-    { s: '.about-body p:nth-of-type(4)', en: 'He writes under the personal brand <strong>李佛创投笔记 (Li Fo Venture Notes)</strong>, sharing bilingual insights on biotech, AI, deep tech and the Greater Bay Area startup ecosystem.', zh: '他以个人品牌<strong>《李佛创投笔记》（Li Fo Venture Notes）</strong>持续写作，以中英双语分享生物科技、AI、深科技与大湾区创业生态的观察。' },
+    { s: '.about-body p:nth-of-type(4)', en: 'He writes under the personal brand <strong>李佛创投笔记 (Li Fo Venture Notes)</strong>, sharing bilingual insights on Life Science, AI, deep tech and the Greater Bay Area startup ecosystem.', zh: '他以个人品牌<strong>《李佛创投笔记》（Li Fo Venture Notes）</strong>持续写作，以中英双语分享生命科学、AI、深科技与大湾区创业生态的观察。' },
     { s: '.about-side h3:nth-of-type(1)', en: 'Education', zh: '教育背景' },
     { s: '.about-side ul:nth-of-type(1) li:nth-of-type(1) .fact-label', en: 'BBA, Accounting &amp; Finance', zh: '工商管理学士（会计及财务）' },
     { s: '.about-side ul:nth-of-type(1) li:nth-of-type(1) .fact-sub', en: 'The University of Hong Kong (HKU)', zh: '香港大学（HKU）' },
@@ -84,8 +84,8 @@
     { s: '#focus h2', en: 'Where I spend my conviction', zh: '我聚焦深耕的领域' },
     { s: '#focus .card:nth-of-type(1) h3', en: 'Deep Tech &amp; AI', zh: '深科技与 AI' },
     { s: '#focus .card:nth-of-type(1) p', en: 'Hard-tech ventures and AI applications emerging from frontier research labs across the GBA.', zh: '投资源自大湾区前沿科研实验室的硬科技公司与 AI 应用。' },
-    { s: '#focus .card:nth-of-type(2) h3', en: 'Biotech &amp; Healthcare', zh: '生物科技与医疗健康' },
-    { s: '#focus .card:nth-of-type(2) p', en: 'Life-sciences platforms — from AI-driven drug discovery to peptide design and therapeutics.', zh: '生命科学平台——从 AI 药物发现到多肽设计与创新疗法。' },
+    { s: '#focus .card:nth-of-type(2) h3', en: 'Life Science', zh: '生命科学' },
+    { s: '#focus .card:nth-of-type(2) p', en: 'Biotech and healthcare platforms — from AI-driven drug discovery to peptide design and therapeutics.', zh: '生物科技与医疗健康平台——从 AI 药物发现到多肽设计与创新疗法。' },
     { s: '#focus .card:nth-of-type(3) h3', en: 'University Spin-offs', zh: '大学衍生企业' },
     { s: '#focus .card:nth-of-type(3) p', en: 'Commercialising academic IP into investable companies with the right team and structure.', zh: '把学术知识产权商业化，配以合适的团队与架构，成为可投资的公司。' },
     { s: '#focus .card:nth-of-type(4) h3', en: 'GreenTech &amp; Sustainability', zh: '绿色科技与可持续发展' },
@@ -139,13 +139,13 @@
     { s: '#faq h2', en: 'Frequently asked questions', zh: '常见问题' },
     { s: '#faq .section-sub', en: 'Quick answers about Fred Li and 李佛创投笔记.', zh: '关于 Fred Li 与《李佛创投笔记》的快速解答。' },
     { s: '.faq-list details:nth-of-type(1) summary', en: 'Who is Fred Li (李冠乐)?', zh: '李冠乐（Fred Li）是谁？' },
-    { s: '.faq-list details:nth-of-type(1) p', en: 'Fred Li (李冠乐, Li Koon Lok) is Managing Director &amp; Head of University Ventures at Gobi Partners, based in Hong Kong. He leads Gobi\u2019s university ventures strategy across the Greater Bay Area — including the Gobi-HKU Fund I with The University of Hong Kong and the Gobi-Redbird Innovation Fund with HKUST — investing in deep tech, biotech and university spin-offs.', zh: '李冠乐（Fred Li，Li Koon Lok）是戈壁创投董事总经理兼大学创投负责人，常驻香港。他领导戈壁在大湾区的大学创投战略——包括与香港大学合作的 Gobi-HKU Fund I 及与香港科技大学合作的 Gobi-Redbird Innovation Fund——投资深科技、生物科技与大学衍生企业。' },
+    { s: '.faq-list details:nth-of-type(1) p', en: 'Fred Li (李冠乐, Li Koon Lok) is Managing Director &amp; Head of University Ventures at Gobi Partners, working across the Greater Bay Area. He leads Gobi\u2019s university ventures strategy — including the Gobi-HKU Fund I with The University of Hong Kong and the Gobi-Redbird Innovation Fund with HKUST — and is among the most active venture capitalists, ecosystem builders and educators in the region, teaching 100+ hours a year across six Hong Kong universities.', zh: '李冠乐（Fred Li，Li Koon Lok）是戈壁创投董事总经理兼大学创投负责人，活跃于大湾区。他领导戈壁的大学创投战略——包括与香港大学合作的 Gobi-HKU Fund I 及与香港科技大学合作的 Gobi-Redbird Innovation Fund——是区内最活跃的风险投资人、生态建设者与创投教育者之一，每年在六所香港高校授课超过100小时。' },
     { s: '.faq-list details:nth-of-type(2) summary', en: 'What is 李佛创投笔记 (Li Fo Venture Notes)?', zh: '《李佛创投笔记》是什么？' },
     { s: '.faq-list details:nth-of-type(2) p', en: '李佛创投笔记 is Fred\u2019s WeChat official account (公众号), publishing Chinese-language deep dives on venture capital, university spin-offs, technology transfer, and the Hong Kong / Greater Bay Area innovation ecosystem.', zh: '《李佛创投笔记》是 Fred 的微信公众号，发表关于风险投资、大学衍生企业、技术转移及香港与大湾区创新生态的中文深度文章。' },
     { s: '.faq-list details:nth-of-type(3) summary', en: 'What does Fred Li invest in?', zh: 'Fred Li 投资哪些领域？' },
-    { s: '.faq-list details:nth-of-type(3) p', en: 'Early-stage deep tech: university spin-offs, healthcare &amp; biotechnology, AI and robotics, and greentech — primarily across Hong Kong and the Greater Bay Area.', zh: '早期深科技：大学衍生企业、医疗健康与生物科技、AI 与机器人、绿色科技——主要布局香港与大湾区。' },
+    { s: '.faq-list details:nth-of-type(3) p', en: 'Early-stage deep tech: university spin-offs, Life Science (biotech &amp; healthcare), AI and robotics, and greentech — primarily across Hong Kong and the Greater Bay Area.', zh: '早期深科技：大学衍生企业、生命科学（生物科技与医疗健康）、AI 与机器人、绿色科技——主要布局香港与大湾区。' },
     { s: '.faq-list details:nth-of-type(4) summary', en: 'How can I contact Fred Li?', zh: '如何联系 Fred Li？' },
-    { s: '.faq-list details:nth-of-type(4) p', en: 'Email <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>, connect on <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>, or follow 李佛创投笔记 on WeChat.', zh: '电邮 <a href="mailto:fred@gobi.vc">fred@gobi.vc</a>、在<a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">领英</a>联系，或在微信关注《李佛创投笔记》。' },
+    { s: '.faq-list details:nth-of-type(4) p', en: 'Connect on <a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">LinkedIn</a>, or follow 李佛创投笔记 on WeChat.', zh: '在<a href="https://www.linkedin.com/in/fredkli" target="_blank" rel="noopener">领英</a>联系，或在微信关注《李佛创投笔记》。' },
 
     /* Moments carousel */
     { s: '#moments .kicker', en: '— In the Field —', zh: '— 活动掠影 —' },
@@ -183,7 +183,7 @@
     /* Footer */
     { s: '.footer-links a[href*="gobi.vc"]', en: 'Gobi Partners', zh: '戈壁创投' },
     { s: '.footer-links a[href*="linkedin"]', en: 'LinkedIn', zh: '领英' },
-    { s: '.footer-links a[href^="mailto"]', en: 'Email', zh: '电邮' },
+    { s: '#logoBandTitle', en: 'Firms &amp; institutions I serve and teach with', zh: '任职与合作机构' },
     { s: '.footer-copy', en: '&copy; <span id="year"></span> Fred Li. All rights reserved. · Last updated: Jul 15, 2026', zh: '&copy; <span id="year"></span> 李冠乐 Fred Li · 版权所有 · 最后更新：2026年7月15日' }
   ];
 
