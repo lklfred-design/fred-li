@@ -5,7 +5,8 @@
     "date": "Jun 29, 2026",
     "likes": 7,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7477287969377177600/",
-    "feature": true
+    "feature": true,
+    "cover": "photos/hku-fund-launch.jpg"
   },
   {
     "tag": "FemTech",
@@ -13,7 +14,8 @@
     "date": "Jun 24, 2026",
     "likes": 5,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7475428706052820992/",
-    "feature": false
+    "feature": false,
+    "cover": "li-covers/li1.jpg"
   },
   {
     "tag": "GBA",
@@ -21,7 +23,8 @@
     "date": "Jun 22, 2026",
     "likes": 16,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7474112606241193984/",
-    "feature": false
+    "feature": false,
+    "cover": "photos/hku-lecture.jpg"
   },
   {
     "tag": "Deep Tech",
@@ -29,7 +32,8 @@
     "date": "Jun 22, 2026",
     "likes": 15,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7473234041941630977/",
-    "feature": false
+    "feature": false,
+    "cover": "li-covers/li3.jpg"
   },
   {
     "tag": "Interview",
@@ -37,7 +41,8 @@
     "date": "Jun 15, 2026",
     "likes": 40,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7471475702475735040/",
-    "feature": false
+    "feature": false,
+    "cover": "photos/hkust-redbird.jpg"
   },
   {
     "tag": "Speaking",
@@ -45,6 +50,7 @@
     "date": "Jun 15, 2026",
     "likes": 47,
     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7470115310390583298/",
-    "feature": false
+    "feature": false,
+    "cover": "li-covers/li5.jpg"
   }
 ]

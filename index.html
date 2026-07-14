@@ -707,7 +707,10 @@
         a.href = p.url;
         a.target = '_blank';
         a.rel = 'noopener';
-        a.innerHTML = '<span class="post-tag">' + p.tag + '</span>'
+        if (p.cover) {
+          a.innerHTML = '<span class="card-cover" style="background-image:url(\'' + p.cover + '\')" aria-hidden="true"></span><span class="card-cover-veil" aria-hidden="true"></span>';
+        }
+        a.innerHTML += '<span class="post-tag">' + p.tag + '</span>'
           + '<p class="post-text">' + p.text + '</p>'
           + '<span class="post-meta"><span class="post-date">' + p.date + '</span></span>';
         wall.appendChild(a);

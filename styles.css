@@ -326,13 +326,15 @@ html:not([data-theme="light"]) .footer{background:rgba(3,9,19,.7)}
 .article-card{display:flex;flex-direction:column;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px;text-decoration:none;transition:transform .18s,box-shadow .18s,border-color .18s;border-left:4px solid var(--gold)}
 .article-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(12,35,64,.1);border-left-color:var(--aqua)}
 .article-card:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
-.popular-card{position:relative;overflow:hidden}
-.popular-card>*{position:relative;z-index:2}
-.card-cover{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center 30%;filter:brightness(.55) saturate(.85);opacity:.34;transition:opacity .25s,filter .25s}
-.card-cover-veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.94) 62%,rgba(255,255,255,.97) 100%)}
-html:not([data-theme="light"]) .card-cover{opacity:.5;filter:brightness(.42) saturate(.8)}
-html:not([data-theme="light"]) .card-cover-veil{background:linear-gradient(180deg,rgba(9,22,42,.55) 0%,rgba(8,19,36,.86) 58%,rgba(7,17,33,.94) 100%)}
-.popular-card:hover .card-cover{opacity:.55;filter:brightness(.6) saturate(1)}
+.popular-card,.post-card{position:relative;overflow:hidden}
+.popular-card>*,.post-card>*{position:relative;z-index:2}
+.card-cover{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center 30%;filter:brightness(.6) saturate(.9);opacity:.44;transition:opacity .25s,filter .25s}
+.card-cover-veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,.88) 62%,rgba(255,255,255,.94) 100%)}
+html:not([data-theme="light"]) .card-cover{opacity:.65;filter:brightness(.48) saturate(.85)}
+html:not([data-theme="light"]) .card-cover-veil{background:linear-gradient(180deg,rgba(9,22,42,.42) 0%,rgba(8,19,36,.76) 58%,rgba(7,17,33,.88) 100%)}
+.post-card.feature .card-cover{opacity:.65;filter:brightness(.48) saturate(.85)}
+.post-card.feature .card-cover-veil{background:linear-gradient(180deg,rgba(9,22,42,.62) 0%,rgba(8,19,36,.82) 58%,rgba(7,17,33,.92) 100%)}
+.popular-card:hover .card-cover,.post-card:hover .card-cover{opacity:.7;filter:brightness(.65) saturate(1)}
 .article-date{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--aqua)}
 .article-title{font-size:18px;font-weight:700;color:var(--navy);line-height:1.4;font-family:var(--cn)}
 .article-summary{font-size:14px;color:var(--charcoal);line-height:1.5}
