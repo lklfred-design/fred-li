@@ -4,83 +4,95 @@
     "date": "Jun 7, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484715&idx=1&sn=cd6f328c9bceca102970cd4eb69bc7db&chksm=f51d6f9dc26ae68baba5ff5eec1e74cd6c44a251eae735b0c16fc7e22e9efc3cbeab08c437d6#rd",
     "summary": "动脉网深度专访：Gobi-RIF 港科大基金的策略拆解，以及“科创航母”背后的产学研投布局。",
-    "type": "interview"
+    "type": "interview",
+    "cover": "covers/art00.jpg"
   },
   {
     "title": "公开我的深港国际技术经理人课程「个人学习总结」",
     "date": "May 11, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484504&idx=1&sn=50e14c3e5bc0ada5c51f2ded06cf6d6e&chksm=f51d6eeec26ae7f8d76ab02b06ea4168cc94f578a9bcdf7742806ce7c3cd92677b83e0288c53#rd",
     "summary": "深港国际技术经理人课程的个人学习总结：技术转移与成果转化的实战笔记。",
-    "type": "review"
+    "type": "review",
+    "cover": "covers/art01.jpg"
   },
   {
     "title": "全球首个艾滋病治疗性疫苗：ICVAX",
     "date": "May 9, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484486&idx=1&sn=ed264117a06042de6ee93a9becd48b34&chksm=f51d6ef0c26ae7e687893515142a179ed52b69aa2de50d97cfc346b6a07ebfaa95ca115c2d55#rd",
     "summary": "解读全球首个艾滋病治疗性疫苗 ICVAX：科学突破背后的商业化路径。",
-    "type": "analysis"
+    "type": "analysis",
+    "cover": "covers/art02.jpg"
   },
   {
     "title": "写给资管家办的心里话：本地的钱，是时候回家看看了",
     "date": "May 2, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484427&idx=1&sn=415e2e4787184c00e0d00eeaaeb57abe&chksm=f51d6ebdc26ae7ab198ed2910f7cd57cb6836a6ba306a3d260e4f6a8f85ef3841b4aefff6e8c#rd",
     "summary": "写给资管与家族办公室的心里话：香港本地资本与本地科创生态的双向奔赴。",
-    "type": "opinion"
+    "type": "opinion",
+    "cover": "covers/art03.jpg"
   },
   {
     "title": "专访，我就是一名VC界的农夫",
     "date": "Apr 22, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484343&idx=1&sn=a939affb0835a61e6f3832a4ed6edf84&chksm=f51d6901c26ae017e4f8fb50863fba43cfe2022ce3560dab68112d4c6becdb065aae00d7dc33#rd",
     "summary": "媒体专访：以农夫心态深耕产学研投生态，做长期主义的早期投资人。",
-    "type": "interview"
+    "type": "interview",
+    "cover": "covers/art04.jpg"
   },
   {
     "title": "百亿“产学研1+计划”，第3批结果解读",
     "date": "Apr 20, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484320&idx=1&sn=8bf8e9238010d371f9603406eb91fd9f&chksm=f51d6916c26ae000219316ca305e9f7e6dfc9ac7e5dae9c85f03db07ab7984c72d1750b920bf#rd",
     "summary": "香港百亿“产学研1+计划”第三批结果的深度解读：谁入选了，风向是什么。",
-    "type": "analysis"
+    "type": "analysis",
+    "cover": "covers/art05.jpg"
   },
   {
     "title": "被VC拒了，却不知道原因？这十问你可能没答上来",
     "date": "Apr 19, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484293&idx=1&sn=6f55a47c40edcab0c947f83cac5d0ca0&chksm=f51d6933c26ae025927c0738278f42400cb98361b3546e70e10afb253f1943d093ce1ea2ae75#rd",
     "summary": "创始人融资自检清单：VC 尽调背后最关键的十个问题。",
-    "type": "opinion"
+    "type": "opinion",
+    "cover": "covers/art06.jpg"
   },
   {
     "title": "维度之战：产学研投新时代的Playbook 3.0",
     "date": "Apr 18, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484278&idx=1&sn=9efef4110d44d7d1af7bd88c1dac254f&chksm=f51d69c0c26ae0d6132f7f43d268d4f808b42bbdc6357303ec85045a3ee9d66f3b8d93d69419#rd",
     "summary": "产学研投新时代的完整打法：Playbook 3.0 框架全拆解。",
-    "type": "analysis"
+    "type": "analysis",
+    "cover": "covers/art07.jpg"
   },
   {
     "title": "从做不出发动机的博导说起 | 李佛深度解读",
     "date": "Apr 8, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484119&idx=1&sn=72908f11acfad41d54f0ef65cd594b77&chksm=f51d6861c26ae177be894022274035dac0a1978a6da6f335c6975e96445aa6c7b9fde081a2c9#rd",
     "summary": "从“做不出发动机的博导”谈起：科研、工程化与商业化之间的真实鸿沟。",
-    "type": "opinion"
+    "type": "opinion",
+    "cover": "covers/art08.jpg"
   },
   {
     "title": "香港高校做VC，不是走得太前，只是回归本源 | 李佛深度解读",
     "date": "Apr 7, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484113&idx=1&sn=374ba8ab48c50e193e80c95bf7bae78a&chksm=f51d6867c26ae171c3337d8fb8d2c65b2b69262a72207d9e0eeff398429a8a8ed3c52ca2e3fe#rd",
     "summary": "高校做 VC 的历史脉络与本源逻辑：为什么这不是激进，而是回归。",
-    "type": "opinion"
+    "type": "opinion",
+    "cover": "covers/art09.jpg"
   },
   {
     "title": "大学对创科的影响有多大 | 李佛深度解读",
     "date": "Apr 6, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484104&idx=1&sn=27841c3871a1203c68bd60eab82738fc&chksm=f51d687ec26ae168aa738cb2f2d80e9be4f869941d76e4ccacec5788714f5893826fabab62f5#rd",
     "summary": "用数据与案例拆解大学在创科生态中的真实影响力。",
-    "type": "analysis"
+    "type": "analysis",
+    "cover": "covers/art10.jpg"
   },
   {
     "title": "香港创科发展的血脉 | 李佛深度解读",
     "date": "Apr 5, 2026",
     "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDExNTI4OQ==&mid=2247484098&idx=1&sn=d5bfe0805be317ee4d2d9f0b3ddeb71c&chksm=f51d6874c26ae1625024cdd9022c60053933ec9585f921e9ec46ec25db730bd1570a639895b1#rd",
     "summary": "梳理香港创科发展的资金、人才与制度血脉，看懂生态的底层结构。",
-    "type": "analysis"
+    "type": "analysis",
+    "cover": "covers/art11.jpg"
   }
 ]
