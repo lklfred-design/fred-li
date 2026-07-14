@@ -121,11 +121,11 @@ html:not([data-theme="light"]) .footer{background:rgba(3,9,19,.7)}
 .nav-btn svg{flex-shrink:0}
 .nav-btn:hover{transform:translateY(-1px)}
 .nav-btn:focus-visible{outline:2px solid var(--gold-bright);outline-offset:2px}
-.nav-btn-li{background:rgba(168,216,232,.12);color:var(--aqua-light);border:1px solid rgba(168,216,232,.35)}
-.nav-btn-li:hover{background:var(--aqua);color:var(--navy);border-color:var(--aqua)}
-.nav-btn-wc{background:var(--gold);color:var(--navy);border:1px solid var(--gold)}
+a.nav-btn-li{background:rgba(168,216,232,.12);color:var(--aqua-light);border:1px solid rgba(168,216,232,.35)}
+a.nav-btn-li:hover{background:var(--aqua);color:#0C2340;border-color:var(--aqua)}
+a.nav-btn-wc{background:var(--gold);color:#0C2340;border:1px solid var(--gold)}
 .nav-btn-wc span{font-family:var(--cn);font-weight:700}
-.nav-btn-wc:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+a.nav-btn-wc:hover{background:var(--gold-bright);border-color:var(--gold-bright);color:#0C2340}
 
 /* P0: Mobile hamburger button */
 .nav-hamburger{
@@ -522,4 +522,34 @@ html:not([data-theme="light"]) .card-cover-veil{background:linear-gradient(180de
   .car-btn{width:38px;height:38px;font-size:20px}
   .car-prev{left:8px}
   .car-next{right:8px}
+}
+
+/* ── Interstellar hover: motion + glow ── */
+.card,.post-card,.article-card,.press-item a{position:relative;overflow:hidden;transition:transform .38s cubic-bezier(.21,.86,.36,1.18),box-shadow .38s ease,border-color .3s ease}
+.card::after,.post-card::after,.article-card::after,.press-item a::after{content:"";position:absolute;top:-8%;bottom:-8%;left:0;width:55%;z-index:3;pointer-events:none;opacity:0;background:linear-gradient(105deg,transparent 0%,rgba(72,169,197,.13) 42%,rgba(168,216,232,.32) 50%,rgba(72,169,197,.13) 58%,transparent 100%);transform:translateX(-170%) skewX(-14deg)}
+@keyframes cardSheen{0%{opacity:1;transform:translateX(-170%) skewX(-14deg)}100%{opacity:1;transform:translateX(320%) skewX(-14deg)}}
+.card:hover::after,.post-card:hover::after,.article-card:hover::after,.press-item a:hover::after{animation:cardSheen .85s ease .04s}
+html:not([data-theme="light"]) .card::after,html:not([data-theme="light"]) .post-card::after,html:not([data-theme="light"]) .article-card::after,html:not([data-theme="light"]) .press-item a::after{background:linear-gradient(105deg,transparent 0%,rgba(168,216,232,.1) 42%,rgba(255,255,255,.22) 50%,rgba(168,216,232,.1) 58%,transparent 100%)}
+.card:hover,.post-card:hover,.article-card:hover{transform:translateY(-6px) scale(1.012);border-color:var(--aqua);box-shadow:0 0 0 1px rgba(72,169,197,.32),0 16px 36px rgba(12,35,64,.16),0 0 30px rgba(72,169,197,.2)}
+.press-item a:hover{transform:translateY(-5px) scale(1.01);border-left-color:var(--gold);box-shadow:0 0 0 1px rgba(212,168,67,.3),0 14px 30px rgba(12,35,64,.14),0 0 26px rgba(212,168,67,.22)}
+html:not([data-theme="light"]) .card:hover,html:not([data-theme="light"]) .post-card:hover,html:not([data-theme="light"]) .article-card:hover{box-shadow:0 0 0 1px rgba(72,169,197,.5),0 14px 36px rgba(0,0,0,.5),0 0 46px rgba(72,169,197,.3)}
+html:not([data-theme="light"]) .press-item a:hover{box-shadow:0 0 0 1px rgba(212,168,67,.45),0 14px 32px rgba(0,0,0,.5),0 0 40px rgba(212,168,67,.26)}
+.btn{transition:transform .32s cubic-bezier(.21,.86,.36,1.18),background .22s,color .22s,box-shadow .35s ease}
+.btn:hover{transform:translateY(-3px) scale(1.025)}
+.btn-primary:hover{box-shadow:0 0 24px rgba(212,168,67,.55),0 6px 16px rgba(12,35,64,.28)}
+.btn-ghost:hover{box-shadow:0 0 22px rgba(72,169,197,.45),0 6px 16px rgba(12,35,64,.2)}
+.nav-btn{transition:transform .3s cubic-bezier(.21,.86,.36,1.18),background .22s,color .22s,border-color .22s,box-shadow .35s ease}
+.nav-btn:hover{transform:translateY(-2px) scale(1.03)}
+.nav-btn-li:hover{box-shadow:0 0 18px rgba(72,169,197,.55)}
+.nav-btn-wc:hover{box-shadow:0 0 18px rgba(212,168,67,.6)}
+.nav-links a{transition:color .2s,text-shadow .35s ease}
+.nav-links a:hover{text-shadow:0 0 14px rgba(240,199,94,.85),0 0 30px rgba(240,199,94,.4)}
+.lang-toggle:hover,.theme-toggle:hover,.car-btn:hover{box-shadow:0 0 16px rgba(72,169,197,.55)}
+.logo-strip img{transition:opacity .25s,filter .4s ease,transform .4s cubic-bezier(.21,.86,.36,1.18)}
+.logo-strip li:hover img{opacity:1;transform:translateY(-4px) scale(1.05);filter:drop-shadow(0 0 9px rgba(72,169,197,.5)) drop-shadow(0 0 22px rgba(72,169,197,.28))}
+.faq-item summary{transition:color .22s,text-shadow .35s}
+.faq-item summary:hover{text-shadow:0 0 12px rgba(72,169,197,.55)}
+@media (prefers-reduced-motion:reduce){
+  .card:hover,.post-card:hover,.article-card:hover,.press-item a:hover,.btn:hover,.nav-btn:hover,.logo-strip li:hover img{transform:none}
+  .card:hover::after,.post-card:hover::after,.article-card:hover::after,.press-item a:hover::after{animation:none}
 }
