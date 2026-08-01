@@ -203,10 +203,10 @@
       </div>
       <div class="hero-card">
         <div class="avatar avatar-portrait" id="heroRotator">
-          <img src="photos/hero-1.jpg" alt="Fred Li — venture capitalist, educator and ecosystem builder in the Greater Bay Area" id="heroPhoto" class="hr-slide active" width="330" height="440" fetchpriority="high" />
-          <img src="photos/hero-2.jpg" alt="Fred Li teaching a venture capital workshop at PolyU" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
-          <img src="photos/hero-3.jpg" alt="Fred Li speaking at the PolyU RAISe+ investment connect" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
-          <img src="photos/hero-4.jpg" alt="Fred Li sharing at HKSTP Elite Inno Day" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
+          <img src="photos/hero-1.jpg" srcset="photos/hero-1.jpg 1x, photos@2x/hero-1-2x.jpg 2x" alt="Fred Li — venture capitalist, educator and ecosystem builder in the Greater Bay Area" id="heroPhoto" class="hr-slide active" width="330" height="440" fetchpriority="high" />
+          <img src="photos/hero-2.jpg" srcset="photos/hero-2.jpg 1x, photos@2x/hero-2-2x.jpg 2x" alt="Fred Li teaching a venture capital workshop at PolyU" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
+          <img src="photos/hero-3.jpg" srcset="photos/hero-3.jpg 1x, photos@2x/hero-3-2x.jpg 2x" alt="Fred Li speaking at the PolyU RAISe+ investment connect" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
+          <img src="photos/hero-4.jpg" srcset="photos/hero-4.jpg 1x, photos@2x/hero-4-2x.jpg 2x" alt="Fred Li sharing at HKSTP Elite Inno Day" class="hr-slide" width="330" height="440" loading="lazy" decoding="async" />
         </div>
         <div class="avatar-meta">
           <span class="avatar-name">Fred Li</span>
@@ -1189,6 +1189,53 @@
   var rT;window.addEventListener('resize',function(){clearTimeout(rT);rT=setTimeout(resize,180);},{passive:true});
   resize();
   if(!reduced){nextShoot=6000;nextDrift=12000;requestAnimationFrame(frame);}
+})();
+</script>
+
+<!-- v4: Ripple effect on all clickable elements -->
+<script>
+(function(){
+  var selectors='.btn,.nav-btn,.lang-toggle,.theme-toggle,.car-btn,.car-dot,.card,.post-card,.article-card,.press-item a,.faq-item,.logo-strip li,.nav-links a,.nav-mobile nav a,.footer-links a,.hero-role a,.body-link,.eyebrow-link,.section-sub a';
+  var els=document.querySelectorAll(selectors);
+  for(var i=0;i<els.length;i++){
+    els[i].classList.add('ripple-host');
+    (function(el){
+      el.addEventListener('pointerdown',function(e){
+        if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+        var rect=el.getBoundingClientRect();
+        var size=Math.max(rect.width,rect.height);
+        var x=(e.clientX||rect.left+rect.width/2)-rect.left-size/2;
+        var y=(e.clientY||rect.top+rect.height/2)-rect.top-size/2;
+        var wave=document.createElement('span');
+        wave.className='ripple-wave';
+        wave.style.width=wave.style.height=size+'px';
+        wave.style.left=x+'px';
+        wave.style.top=y+'px';
+        el.appendChild(wave);
+        setTimeout(function(){if(wave.parentNode)wave.parentNode.removeChild(wave);},650);
+      });
+    })(els[i]);
+  }
+})();
+</script>
+
+<!-- v4: Mouse parallax for cosmic background — subtle depth shift on cursor move -->
+<script>
+(function(){
+  var c=document.getElementById('galaxy');if(!c)return;
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var mx=0,my=0,tx=0,ty=0;
+  window.addEventListener('mousemove',function(e){
+    mx=(e.clientX/window.innerWidth-0.5)*2;
+    my=(e.clientY/window.innerHeight-0.5)*2;
+  },{passive:true});
+  function tick(){
+    tx+=(mx-tx)*0.04;
+    ty+=(my-ty)*0.04;
+    c.style.transform='translate('+(tx*-6).toFixed(1)+'px,'+(ty*-6).toFixed(1)+'px) scale(1.01)';
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 })();
 </script>
 </body>

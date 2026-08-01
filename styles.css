@@ -19,8 +19,13 @@
   --line:#17304F;
   --white:#050E1D;
   --off:#0A1626;
-  --glass:rgba(13,30,54,.55);
+  --glass:rgba(13,30,54,.42);
   --glass-border:rgba(96,150,200,.22);
+  --glass-blur:blur(16px) saturate(180%);
+  --glass-highlight:inset 0 1px 0 rgba(168,216,232,.14),inset 0 -1px 0 rgba(0,0,0,.12);
+  --glass-shadow:0 8px 32px rgba(0,0,0,.28),0 0 0 1px rgba(96,150,200,.06);
+  --glass-light:rgba(255,255,255,.55);
+  --glass-light-border:rgba(255,255,255,.6);
 }
 [data-theme="light"]{
   --navy:#0C2340;
@@ -33,6 +38,8 @@
   --line:#E4E8EC;
   --white:#FFFFFF;
   --off:#F8F9FA;
+  --glass-light:rgba(255,255,255,.65);
+  --glass-light-border:rgba(255,255,255,.8);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;background:#050E1D}
@@ -51,15 +58,101 @@ body{
 }
 html:not([data-theme="light"]) body{background:transparent}
 
-/* v2 cosmic: semi-transparent glass surfaces (dark mode only) */
+/* v4 glassmorphism: frosted glass with backdrop-filter + saturate + inset highlights */
+/* Dark mode glass surfaces */
 html:not([data-theme="light"]) .card,
 html:not([data-theme="light"]) .post-card,
 html:not([data-theme="light"]) .press-item a,
-html:not([data-theme="light"]) .qr-card{background:var(--glass);border-color:var(--glass-border)}
-html:not([data-theme="light"]) .section-alt{background:rgba(9,20,38,.55);border-color:rgba(96,150,200,.16)}
-html:not([data-theme="light"]) .nav{background:rgba(4,11,23,.78)}
-html:not([data-theme="light"]) .hero{background:linear-gradient(160deg,rgba(12,35,64,.6) 0%,rgba(4,13,26,.25) 100%)}
-html:not([data-theme="light"]) .footer{background:rgba(3,9,19,.7)}
+html:not([data-theme="light"]) .qr-card,
+html:not([data-theme="light"]) .faq-item,
+html:not([data-theme="light"]) .about-side{
+  background:var(--glass);
+  border-color:var(--glass-border);
+  backdrop-filter:var(--glass-blur);
+  -webkit-backdrop-filter:var(--glass-blur);
+  box-shadow:var(--glass-highlight),0 8px 32px rgba(0,0,0,.22);
+}
+html:not([data-theme="light"]) .hero-card{
+  background:rgba(13,30,54,.32);
+  border-color:rgba(168,216,232,.18);
+  backdrop-filter:blur(12px) saturate(160%);
+  -webkit-backdrop-filter:blur(12px) saturate(160%);
+  box-shadow:var(--glass-highlight),0 12px 40px rgba(0,0,0,.3);
+}
+html:not([data-theme="light"]) .section-alt{
+  background:rgba(9,20,38,.45);
+  border-color:rgba(96,150,200,.14);
+  backdrop-filter:blur(6px) saturate(140%);
+  -webkit-backdrop-filter:blur(6px) saturate(140%);
+}
+html:not([data-theme="light"]) .nav{
+  background:rgba(4,11,23,.62);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px) saturate(180%);
+}
+html:not([data-theme="light"]) .nav-mobile{
+  background:rgba(4,11,23,.88);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px) saturate(180%);
+}
+html:not([data-theme="light"]) .hero{
+  background:linear-gradient(160deg,rgba(12,35,64,.5) 0%,rgba(4,13,26,.2) 100%)
+}
+html:not([data-theme="light"]) .footer{
+  background:rgba(3,9,19,.6);
+  backdrop-filter:blur(12px) saturate(160%);
+  -webkit-backdrop-filter:blur(12px) saturate(160%);
+}
+html:not([data-theme="light"]) .logo-band{
+  background:rgba(245,248,252,.04);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+/* Light mode glass — subtle frosted effect */
+[data-theme="light"] .card,
+[data-theme="light"] .post-card,
+[data-theme="light"] .press-item a,
+[data-theme="light"] .qr-card,
+[data-theme="light"] .faq-item,
+[data-theme="light"] .about-side{
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(12px) saturate(160%);
+  -webkit-backdrop-filter:blur(12px) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 8px 32px rgba(12,35,64,.06);
+}
+[data-theme="light"] .hero-card{
+  background:rgba(255,255,255,.5);
+  backdrop-filter:blur(16px) saturate(180%);
+  -webkit-backdrop-filter:blur(16px) saturate(180%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 18px 44px rgba(12,35,64,.08);
+}
+[data-theme="light"] .nav{
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px) saturate(180%);
+}
+[data-theme="light"] .nav-mobile{
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(20px) saturate(180%);
+  -webkit-backdrop-filter:blur(20px) saturate(180%);
+}
+
+/* @supports fallback — solid bg when backdrop-filter unavailable */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  html:not([data-theme="light"]) .card,
+  html:not([data-theme="light"]) .post-card,
+  html:not([data-theme="light"]) .press-item a,
+  html:not([data-theme="light"]) .qr-card,
+  html:not([data-theme="light"]) .faq-item,
+  html:not([data-theme="light"]) .about-side{background:rgba(10,22,38,.92)}
+  [data-theme="light"] .card,
+  [data-theme="light"] .post-card,
+  [data-theme="light"] .press-item a,
+  [data-theme="light"] .qr-card,
+  [data-theme="light"] .faq-item,
+  [data-theme="light"] .about-side{background:rgba(255,255,255,.92)}
+}
 
 /* v3: fully light light-mode — no navy hero/footer */
 [data-theme="light"] .hero{background:linear-gradient(180deg,#FFFFFF 0%,#ECF3F8 100%);color:var(--navy-solid)}
@@ -72,7 +165,7 @@ html:not([data-theme="light"]) .footer{background:rgba(3,9,19,.7)}
 [data-theme="light"] .hero-tags li{color:#33566E;border-color:rgba(12,35,64,.28)}
 [data-theme="light"] .btn-ghost{border-color:#2E7E9C;color:#2E7E9C}
 [data-theme="light"] .btn-ghost:hover{background:#2E7E9C;color:#FFFFFF}
-[data-theme="light"] .hero-card{background:#FFFFFF;border:1px solid #E1E8EF;box-shadow:0 18px 44px rgba(12,35,64,.10)}
+[data-theme="light"] .hero-card{border:1px solid rgba(225,232,239,.6)}
 [data-theme="light"] .avatar-name{color:var(--navy-solid)}
 [data-theme="light"] .avatar-sub{color:#2E718A}
 [data-theme="light"] .avatar-cred{color:#9A731A}
@@ -556,7 +649,41 @@ html:not([data-theme="light"]) .press-item a:hover{box-shadow:0 0 0 1px rgba(212
 .logo-strip li:hover img{opacity:1;transform:translateY(-4px) scale(1.05);filter:drop-shadow(0 0 9px rgba(72,169,197,.5)) drop-shadow(0 0 22px rgba(72,169,197,.28))}
 .faq-item summary{transition:color .22s,text-shadow .35s}
 .faq-item summary:hover{text-shadow:0 0 12px rgba(72,169,197,.55)}
+/* ── v4: Click/tap active feedback — tactile press-down on all interactive elements ── */
+.btn:active,.nav-btn:active,.lang-toggle:active,.theme-toggle:active,.car-btn:active,.car-dot:active{
+  transform:scale(.95)!important;
+  box-shadow:inset 0 2px 8px rgba(0,0,0,.18)!important;
+  transition:transform .08s ease,box-shadow .08s ease!important;
+}
+.card:active,.post-card:active,.article-card:active,.press-item a:active,.faq-item:active{
+  transform:scale(.985)!important;
+  box-shadow:inset 0 2px 6px rgba(0,0,0,.1),0 4px 14px rgba(0,0,0,.12)!important;
+  transition:transform .08s ease,box-shadow .08s ease!important;
+}
+.nav-links a:active,.nav-mobile nav a:active,.footer-links a:active,.logo-strip li:active img{
+  transform:scale(.92);
+  transition:transform .08s ease!important;
+}
+.hero-role a:active,.body-link:active,.eyebrow-link:active,.section-sub a:active{
+  opacity:.7;transition:opacity .08s ease!important;
+}
+
+/* ── v4: Ripple effect — radial-gradient wave from pointer on click ── */
+.ripple-host{position:relative;overflow:hidden}
+.ripple-wave{
+  position:absolute;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.35) 0%,rgba(255,255,255,.08) 50%,transparent 70%);
+  transform:scale(0);pointer-events:none;z-index:10;
+  animation:rippleExpand .55s cubic-bezier(.21,.86,.36,1.18) forwards;
+}
+@keyframes rippleExpand{to{transform:scale(2.8);opacity:0;}}
+html:not([data-theme="light"]) .ripple-wave{
+  background:radial-gradient(circle,rgba(168,216,232,.28) 0%,rgba(72,169,197,.06) 50%,transparent 70%);
+}
+
 @media (prefers-reduced-motion:reduce){
   .card:hover,.post-card:hover,.article-card:hover,.press-item a:hover,.btn:hover,.nav-btn:hover,.logo-strip li:hover img{transform:none}
   .card:hover::after,.post-card:hover::after,.article-card:hover::after,.press-item a:hover::after{animation:none}
+  .ripple-wave{animation:none;opacity:0}
+  .btn:active,.nav-btn:active,.lang-toggle:active,.theme-toggle:active,.car-btn:active,.car-dot:active{transform:none!important}
 }
