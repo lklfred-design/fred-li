@@ -22,6 +22,15 @@
 - Note: .workbuddy/ files got committed via `git add -A` — consider adding .workbuddy/ to .gitignore.
 - Note: Sogou intermediate URLs (src=11&timestamp=...) may expire; existing entries use direct WeChat URLs (__biz=... format).
 
+## 2026-08-01
+- LinkedIn: no new posts captured. WebFetch still blocked by login wall. WebSearch surfaced one Fred post (深圳 Phoenix Financial Forum, activity-7465753583456587776) but its activity ID is lower than the oldest tracked post (Jun 15, 7470115310390583298), so it predates the tracked range — excluded to preserve latest-first ordering. Consistent with prior 3 runs (no new LinkedIn posts).
+- WeChat: searched via wechat-article-search skill (Sogou). Found 1 new article from 李佛创投笔记 not in file:
+  - 香港植物药的未来契机(下) — Jul 30, 2026 (opinion, cover covers/art02.jpg)
+- Used Python json module to prepend (Edit tool corrupts Chinese quotation marks).
+- Pull --rebase initially failed (leftover unstaged .workbuddy/memory/2026-07-27.md from prior run); that file was committed together in this run.
+- Committed and pushed: `b1430ae` "Weekly content update [Aug 1, 2026]". Remote now 15 WeChat articles, top = 香港植物药的未来契机(下).
+- NOTE: Sogou src=11 intermediate URLs may expire; consider re-resolving to __biz= direct URLs later.
+
 ## 2026-07-06
 - Searched LinkedIn for fredkli recent activity; no new posts found after Jun 29, 2026 (LinkedIn login wall limits visibility).
 - Searched 李佛创投笔记 WeChat publication via Sogou WeChat search.
